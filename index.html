@@ -25,22 +25,30 @@
 </head>
 <body>
     <h1 class = "heading"><a href="index.html" target="_self">Rock Paper Scissors Lizard Spock</a></h1>
-    <button class="button">The Rules</button>
+    <button onclick="document.getElementById('modal').style.display='block'" class="button">The Rules</button>
 
-    <div>
-        <p>Scissors cuts paper
-        <br>Paper covers rock
-        <br>Rock crushes lizard
-        <br>Lizard poisons Spock
-        <br>Spock smashes scissors
-        <br>Scissors decapitates lizard
-        <br>Lizard eats paper
-        <br>Paper disproves Spock
-        <br>Spock vaporizes rock
-        <br>Rock crushes scissors
-        </p>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-container">
+                <span onclick="document.getElementById('modal').style.display='none'"
+                class="close">&times;</span>
+                <p>Scissors cuts paper
+                <br>Paper covers rock
+                <br>Rock crushes lizard
+                <br>Lizard poisons Spock
+                <br>Spock smashes scissors
+                <br>Scissors decapitates lizard
+                <br>Lizard eats paper
+                <br>Paper disproves Spock
+                <br>Spock vaporizes rock
+                <br>Rock crushes scissors
+                </p>
+            </div>
         </div>
+    </div>
 
     <button class="button"><a href="game.html" target="_self">Start Game</a></button>
+
+
 </body>
 </html>
