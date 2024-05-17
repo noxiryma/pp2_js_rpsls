@@ -137,6 +137,7 @@ button:hover {
     width: 150px;
     height: 150px;
     margin: 0 30px;
+    border: solid 3px rgba(0, 0, 0, 1.0);
 }
 
 
