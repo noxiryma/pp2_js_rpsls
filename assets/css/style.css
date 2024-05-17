@@ -48,7 +48,7 @@ p {
     padding: 1%;
 }
 
-.button {
+.button-options {
     border-radius: 15px;
     border: 2px solid rgba(0, 0, 0, 1.0);
     padding: 14px 40px;
@@ -56,12 +56,12 @@ p {
     color: rgba(0, 0, 0, 1.0);
 }
 
-button a {
+.button-options a {
     color: inherit;
     text-decoration: none;
 }
 
-button:hover {
+.button-options:hover {
     background-color: rgba(105, 105, 105, 0.9);
     color: rgba(255, 255, 255, 1.0);
     border: 2px solid rgba(255, 255, 255, 1.0);
@@ -140,7 +140,6 @@ button:hover {
     border: solid 3px rgba(0, 0, 0, 1.0);
 }
 
-
 .score-area {
     display: flex;
     align-items: center;
@@ -158,4 +157,24 @@ button:hover {
     justify-content: space-around;
     position: relative;
     margin-left: 43%;
+}
+
+#rock {
+    background: url(../images/rock.webp) no-repeat center/cover;
+}
+
+#paper {
+    background: url(../images/paper.webp) no-repeat center/cover;
+}
+
+#scissors {
+    background: url(../images/scissors.webp) no-repeat center/cover;
+}
+
+#lizard {
+    background: url(../images/lizard1.webp) no-repeat center/cover;
+}
+
+#spock {
+    background: url(../images/spock.webp) no-repeat center/cover;
 }
