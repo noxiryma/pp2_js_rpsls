@@ -24,3 +24,10 @@ window.onclick = function(event) {
   }
 } 
 
+let rock = document.getElementById("rock");
+let paper = document.getElementById("paper");
+let scissors = document.getElementById("scissors");
+let lizard = document.getElementById("lizard");
+let spock = document.getElementById("spock");
+
+
