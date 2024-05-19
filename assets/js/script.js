@@ -30,4 +30,15 @@ let scissors = document.getElementById("scissors");
 let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
 
+let yourScore = document.getElementById("you");
+let computerScore = document.getElementById("computer");
 
+//Add event listeners for player choice
+
+//Add number of rounds in here 
+
+//Add who won that round in here (win, draw and lose)
+
+//Add game function in here 
+
+//Add reset button function in here 
