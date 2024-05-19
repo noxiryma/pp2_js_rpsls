@@ -36,10 +36,11 @@ p {
     box-sizing: border-box;
     /* flex */
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    /* size*/
+    width: 85%;
+    height: 65vh;
     width: 100%;
-    height: 65vh; 
     max-height: 90%;
     max-width: 90%;
     margin-left: auto;
@@ -47,6 +48,7 @@ p {
     margin-top: 5%;
     padding: 2%;
     text-align: center;
+}
 
 .button-options {
     border-radius: 15px;
