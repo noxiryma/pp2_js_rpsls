@@ -71,11 +71,23 @@ function runGame () {
     } else {
       computerScore++;
     }
-
+  }
 }
 
 //Need to add in your score and computer score function in so can reference in runGame function 
 
 
 //Add game finished and game over function in here 
+function gameResult() {
+  let playerWins = yourScore.value > computerScore.value;
+  let computerWins = computerScore.value > yourScore.value;
+  
+  if (playerWins) {
+    alert(`Hey! You won! Congratulations!`);
+  } else {
+    alert(`Oh no! You lost! Try again by hitting the reset button!`);
+  }
+};
+
+
 //Add reset button function in here 
