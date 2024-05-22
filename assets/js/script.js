@@ -24,16 +24,31 @@ window.onclick = function(event) {
   }
 } 
 
-//variables for game and score 
+//Variables used 
+let start = document.getElementById("start-game");
+let buttons = document.getElementsByClassName("button-round");
+let options = ["rock", "paper", "scissors", "lizard", "spock"];
+let yourScore = document.getElementById("score");
+let computerScore = document.getElementById("incorrect");
+let playerImage = document.getElementById("player-image");
+let computerImage = document.getElementById("computer-image");
+
+//variables for game options 
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
 let scissors = document.getElementById("scissors");
 let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
-let yourScore = document.getElementById("you");
-let computerScore = document.getElementById("computer");
-let playerImage = document.getElementById("player-image");
-let computerImage = document.getElementById("computer-image");
+
+
+//Add Event listener for button clicks 
+/**for (let button of buttons) {
+  button.addEventListener("click", function()) {
+    let playerSelection = this.getAttribute("data-choice");
+    runGame(playerSelection);
+  }
+}
+*/
 
 //Add event listeners for player selection 
 rock.addEventListener("click", runGame("rock"));
@@ -42,30 +57,23 @@ scissors.addEventListener("click", runGame("scissors"));
 lizard.addEventListener("click", runGame("lizard"));
 spock.addEventListener("click", runGame("spock"));
 
+//Add number of rounds function so knows when to close loop 
 
-//Add number of rounds in here 
-let currentRound = 1;
-const maxRounds = 3;
-const resultRounds = document.getElementById("total-rounds");
+//Game run function below 
+function runGame(playerSelection) {
 
-//Add game function in here MAYBE CHANGE THIS TO DATA CHOICE? LESS bulky then.
-function runGame () {
-    if (currentRound <= maxRounds) {
+  playerImage.src = `assets/images/${options[playerSelection]}.webp`;
+  playerImage.alt = options[playerSelection];
 
-    let playerSelection = ["rock", "paper", "scissors", "lizard", "spock"];
+  let computerSelection = Math.floor((Math.random) * 4);
 
-    playerImage.src = `assets/images/${playerSelection[playerChoice]}`;
-    playerImage.alt = ${playerSelection[playerChoice]};
+  computerImage.src = `assets/images/${options[computerSelection]}`;
+  computerImage.alt = options[computerSelection];
 
-    let computerSelection = playerSelection[Math.floor(Math.random() * playerSelection.length)];
-
-    computerImage.src = `assets/images/${computerSelection[computerChoice]}`;
-    computerImage.alt = ${computerSelection[computerChoice]};
-
-    if (playerSelection === computerSelection) {
-      result.textContent = "Draw!";
-    } else if (
-      (playerSelection === "rock" && computerSelection === "lizard") ||
+  if (playerSelection === computerSelection) {
+    result = 0;
+  } else if (
+    (playerSelection === "rock" && computerSelection === "lizard") ||
       (playerSelection === "rock" && computerSelection === "scissors") ||
       (playerSelection === "paper" && computerSelection === "rock") ||
       (playerSelection === "paper" && computerSelection === "spock") ||
@@ -76,21 +84,16 @@ function runGame () {
       (playerSelection === "spock" && computerSelection === "scissors") ||
       (playerSelection === "spock" && computerSelection === "rock") 
     ) {
-      yourScore++; 
+        yourScore++; 
     } else {
-      computerScore++;
+      computerScore++; 
     }
   }
-}
-
-//Need to add in your score and computer score function in so can reference in runGame function 
-
 
 
 //Add game finished and game over function in here 
 function gameResult() {
   let playerWins = yourScore.value > computerScore.value;
-  let computerWins = computerScore.value > yourScore.value;
   
   if (playerWins) {
     alert(`Hey! You won! Congratulations!`);
