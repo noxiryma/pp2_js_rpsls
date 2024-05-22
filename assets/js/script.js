@@ -34,11 +34,11 @@ let yourScore = document.getElementById("you");
 let computerScore = document.getElementById("computer");
 
 //Add event listeners for player selection 
-rock.addEventListener("click", () => runGame("rock"));
-paper.addEventListener("click", () => runGame("paper"));
-scissors.addEventListener("click", () => runGame("scissors"));
-lizard.addEventListener("click", () => runGame("lizard"));
-spock.addEventListener("click", () => runGame("spock"));
+rock.addEventListener("click", runGame("rock"));
+paper.addEventListener("click", runGame("paper"));
+scissors.addEventListener("click", runGame("scissors"));
+lizard.addEventListener("click", runGame("lizard"));
+spock.addEventListener("click", runGame("spock"));
 
 
 //Add number of rounds in here 
@@ -67,7 +67,7 @@ function runGame () {
       (playerSelection === "spock" && computerSelection === "scissors") ||
       (playerSelection === "spock" && computerSelection === "rock") 
     ) {
-          yourScore++; 
+      yourScore++; 
     } else {
       computerScore++;
     }
@@ -75,5 +75,7 @@ function runGame () {
 }
 
 //Need to add in your score and computer score function in so can reference in runGame function 
+
+
 //Add game finished and game over function in here 
 //Add reset button function in here 
