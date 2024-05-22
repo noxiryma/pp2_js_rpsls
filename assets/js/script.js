@@ -73,23 +73,23 @@ function runGame(playerSelection) {
 
   if (playerSelection === computerSelection) {
     result.textContent = "Draw!";
-  } else if (
-    (playerSelection === "rock" && computerSelection === "lizard") ||
-      (playerSelection === "rock" && computerSelection === "scissors") ||
-      (playerSelection === "paper" && computerSelection === "rock") ||
-      (playerSelection === "paper" && computerSelection === "spock") ||
-      (playerSelection === "scissors" && computerSelection === "paper") ||
-      (playerSelection === "scissors" && computerSelection === "lizard") ||
-      (playerSelection === "lizard" && computerSelection === "spock") ||
-      (playerSelection === "lizard" && computerSelection === "paper") ||
-      (playerSelection === "spock" && computerSelection === "scissors") ||
-      (playerSelection === "spock" && computerSelection === "rock") 
+    } else if (
+        (playerSelection === "rock" && computerSelection === "lizard") ||
+        (playerSelection === "rock" && computerSelection === "scissors") ||
+        (playerSelection === "paper" && computerSelection === "rock") ||
+        (playerSelection === "paper" && computerSelection === "spock") ||
+        (playerSelection === "scissors" && computerSelection === "paper") ||
+        (playerSelection === "scissors" && computerSelection === "lizard") ||
+        (playerSelection === "lizard" && computerSelection === "spock") ||
+        (playerSelection === "lizard" && computerSelection === "paper") ||
+        (playerSelection === "spock" && computerSelection === "scissors") ||
+        (playerSelection === "spock" && computerSelection === "rock") 
     ) {
         result.textContent = "You win!";
         yourScore++; 
-    } else {
-      result.textContent = "You lose!";
-      computerScore++; 
+      } else {
+        result.textContent = "You lose!";
+        computerScore++; 
     }  
   }
 
