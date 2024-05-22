@@ -40,15 +40,15 @@ scissors.addEventListener("click", () => runGame("scissors"));
 lizard.addEventListener("click", () => runGame("lizard"));
 spock.addEventListener("click", () => runGame("spock"));
 
+
 //Add number of rounds in here 
-
-let totalRounds = document.getElementById("total-rounds");
-
-
+let currentRound = 1;
+const maxRounds = 3;
+const resultRounds = document.getElementById("total-rounds");
 
 //Add game function in here 
 function runGame () {
-
+    if (currentRound <= maxRounds) {
 
     let playerSelection = ["rock", "paper", "scissors", "lizard", "spock"];
     let computerSelection = playerSelection[Math.floor(Math.random() * playerSelection.length)];
@@ -71,6 +71,9 @@ function runGame () {
     } else {
       computerScore++;
     }
+
 }
 
+//Need to add in your score and computer score function in so can reference in runGame function 
+//Add game finished and game over function in here 
 //Add reset button function in here 
