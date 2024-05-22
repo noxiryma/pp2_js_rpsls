@@ -24,21 +24,32 @@ window.onclick = function(event) {
   }
 } 
 
+//variables for game and score 
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
 let scissors = document.getElementById("scissors");
 let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
-
 let yourScore = document.getElementById("you");
 let computerScore = document.getElementById("computer");
 
-//Add event listeners for player choice
+//Add event listeners for player selection 
+rock.addEventListener("click", () => runGame("rock"));
+paper.addEventListener("click", () => runGame("paper"));
+scissors.addEventListener("click", () => runGame("scissors"));
+lizard.addEventListener("click", () => runGame("lizard"));
+spock.addEventListener("click", () => runGame("spock"));
 
 //Add number of rounds in here 
 
+
 //Add who won that round in here (win, draw and lose)
 
+
 //Add game function in here 
+function runGame () {
+        
+        
+}
 
 //Add reset button function in here 
