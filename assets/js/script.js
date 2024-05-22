@@ -42,14 +42,30 @@ spock.addEventListener("click", () => runGame("spock"));
 
 //Add number of rounds in here 
 
-
-//Add who won that round in here (win, draw and lose)
-
-
 //Add game function in here 
 function runGame () {
-        
-        
+
+
+    let playerSelection = ["rock", "paper", "scissors", "lizard", "spock"];
+    let computerSelection = playerSelection[Math.floor(Math.random() * playerSelection.length)];
+
+    if (playerSelection === computerSelection) {
+      result.textContent = "Draw!";
+    } else if (
+      (playerSelection === "rock" && computerSelection === "lizard") ||
+      (playerSelection === "rock" && computerSelection === "scissors") ||
+      (playerSelection === "paper" && computerSelection === "rock") ||
+      (playerSelection === "paper" && computerSelection === "spock") ||
+      (playerSelection === "scissors" && computerSelection === "paper") ||
+      (playerSelection === "scissors" && computerSelection === "lizard") ||
+      (playerSelection === "lizard" && computerSelection === "spock") ||
+      (playerSelection === "lizard" && computerSelection === "paper") ||
+      (playerSelection === "spock" && computerSelection === "scissors") ||
+      (playerSelection === "spock" && computerSelection === "rock") 
+    ) {
+      
+    }
+    
 }
 
 //Add reset button function in here 
