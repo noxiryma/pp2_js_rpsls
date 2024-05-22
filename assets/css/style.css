@@ -28,12 +28,12 @@ p {
 }
 
 .heading a:hover {
-    color: rgba(105, 105, 105, 0.9);
+    color: #024059;
 }
 
 .instruction-area {
-    background-color: rgba(148, 191, 226, 0.4);
-    box-sizing: border-box;
+    /*background-color: rgba(148, 191, 226, 0.4);
+    box-sizing: border-box;*/
     /* flex */
     display: flex;
     justify-content: space-between;
@@ -52,10 +52,12 @@ p {
 
 .you-vs-computer {
     border: solid 2px rgba(0, 0, 0, 1.0);
+    background-color: #024059;
     width: 50%;
     margin: auto;
     padding: 5%;
     text-align: center;
+    color: #fefefe;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,7 +88,7 @@ p {
 }
 
 .button-options:hover {
-    background-color: rgba(105, 105, 105, 0.9);
+    background-color: #024059;
     color: rgba(255, 255, 255, 1.0);
     border: 2px solid rgba(255, 255, 255, 1.0);
 }
@@ -135,8 +137,8 @@ p {
 /*Game Page*/
 
 .game-area {
-    background-color: rgba(148, 191, 226, 0.4);
-    box-sizing: border-box;
+    /*background-color: rgba(148, 191, 226, 0.4);
+    box-sizing: border-box;*/
     width: 100%;
     max-height: 90%;
     max-width: 90%;
