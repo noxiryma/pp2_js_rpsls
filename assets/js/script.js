@@ -32,6 +32,7 @@ let yourScore = document.getElementById("score");
 let computerScore = document.getElementById("incorrect");
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
+let result = document.getElementById("results");
 
 //variables for game options 
 let rock = document.getElementById("rock");
