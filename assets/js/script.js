@@ -32,6 +32,8 @@ let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
 let yourScore = document.getElementById("you");
 let computerScore = document.getElementById("computer");
+let playerImage = document.getElementById("player-image");
+let computerImage = document.getElementById("computer-image");
 
 //Add event listeners for player selection 
 rock.addEventListener("click", runGame("rock"));
@@ -46,12 +48,19 @@ let currentRound = 1;
 const maxRounds = 3;
 const resultRounds = document.getElementById("total-rounds");
 
-//Add game function in here 
+//Add game function in here MAYBE CHANGE THIS TO DATA CHOICE? LESS bulky then.
 function runGame () {
     if (currentRound <= maxRounds) {
 
     let playerSelection = ["rock", "paper", "scissors", "lizard", "spock"];
+
+    playerImage.src = `assets/images/${playerSelection[playerChoice]}`;
+    playerImage.alt = ${playerSelection[playerChoice]};
+
     let computerSelection = playerSelection[Math.floor(Math.random() * playerSelection.length)];
+
+    computerImage.src = `assets/images/${computerSelection[computerChoice]}`;
+    computerImage.alt = ${computerSelection[computerChoice]};
 
     if (playerSelection === computerSelection) {
       result.textContent = "Draw!";
@@ -75,6 +84,7 @@ function runGame () {
 }
 
 //Need to add in your score and computer score function in so can reference in runGame function 
+
 
 
 //Add game finished and game over function in here 
