@@ -71,7 +71,7 @@ function runGame(playerSelection) {
   computerImage.alt = options[computerSelection];
 
   if (playerSelection === computerSelection) {
-    result = 0;
+    result.textContent = "Draw!";
   } else if (
     (playerSelection === "rock" && computerSelection === "lizard") ||
       (playerSelection === "rock" && computerSelection === "scissors") ||
@@ -84,10 +84,12 @@ function runGame(playerSelection) {
       (playerSelection === "spock" && computerSelection === "scissors") ||
       (playerSelection === "spock" && computerSelection === "rock") 
     ) {
+        result.textContent = "You win!";
         yourScore++; 
     } else {
+      result.textContent = "You lose!";
       computerScore++; 
-    }
+    }  
   }
 
 
@@ -96,9 +98,9 @@ function gameResult() {
   let playerWins = yourScore.value > computerScore.value;
   
   if (playerWins) {
-    alert(`Hey! You won! Congratulations!`);
+    result.textContent = "Congratulations! You've won!";
   } else {
-    alert(`Oh no! You lost! Try again by hitting the reset button!`);
+    result.textContent = "Oh no! You lose! Try again!";
   }
 };
 
