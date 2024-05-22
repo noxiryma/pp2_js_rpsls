@@ -42,6 +42,10 @@ spock.addEventListener("click", () => runGame("spock"));
 
 //Add number of rounds in here 
 
+let totalRounds = document.getElementById("total-rounds");
+
+
+
 //Add game function in here 
 function runGame () {
 
@@ -63,9 +67,10 @@ function runGame () {
       (playerSelection === "spock" && computerSelection === "scissors") ||
       (playerSelection === "spock" && computerSelection === "rock") 
     ) {
-      
+          yourScore++; 
+    } else {
+      computerScore++;
     }
-    
 }
 
 //Add reset button function in here 

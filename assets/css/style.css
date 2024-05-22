@@ -147,6 +147,19 @@ p {
     text-align: center;
 }
 
+
+.score-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 2%;
+    padding: 0 5%;
+    font-size: 200%;
+
+}
+
+
 /*game area*/
 .game-area-buttons {
     display: flex;
@@ -163,17 +176,6 @@ p {
     height: 150px;
     margin: 0 30px;
     border: solid 3px rgba(0, 0, 0, 1.0);
-}
-
-.score-area {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 2%;
-    padding: 0 5%;
-    font-size: 200%;
-
 }
 
 .reset-game-button {
