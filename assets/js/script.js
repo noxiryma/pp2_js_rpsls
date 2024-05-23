@@ -109,7 +109,9 @@ function runGame(playerSelection) {
     yourScoreResult.textContent = `${yourScore}`;
     computerScoreResult.textContent = `${computerScore}`;
     
-    
+    if (currentRound > totalRounds) {
+      gameResult();
+    }
   }
 
 
@@ -126,7 +128,9 @@ function gameResult() {
 
 
 //Add reset button function in here 
-
+function resetGame() {
+  
+}
 
 //Add Event listener for button clicks 
 /**for (let button of buttons) {
