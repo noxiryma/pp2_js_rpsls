@@ -41,8 +41,8 @@ function loadGame() {
 let start = document.getElementById("start-game");
 let buttons = document.getElementsByClassName("button-round");
 let options = ["rock", "paper", "scissors", "lizard", "spock"];
-/**let yourScore = document.getElementById("score");
-let computerScore = document.getElementById("incorrect");*/
+let yourScore = document.getElementById("score");
+let computerScore = document.getElementById("incorrect");
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let result = document.getElementById("results");
@@ -67,8 +67,6 @@ const totalRounds = 3;
 const displayedRounds = document.getElementById("total-rounds");
 
 //Player and Computer Score 
-let yourScore = 0; 
-let computerScore = 0;
 
 //Game run function below 
 function runGame(playerSelection) {
@@ -104,8 +102,7 @@ function runGame(playerSelection) {
         computerScore++; 
     }  
 
-    let yourScoreResult = document.getElementById("score");
-    let computerScoreResult = document.getElementById("incorrect");
+    let yourScoreResult = 
 
     yourScoreResult.textContent = `${yourScore}`;
     computerScoreResult.textContent = `${computerScore}`;
@@ -117,19 +114,7 @@ function runGame(playerSelection) {
 
 
 //Add game finished and game over function in here 
-function gameResult() {
-  let playerWins = yourScore.value > computerScore.value;
-  let playerLoses = yourScore.value < computerScore.value; 
-  let gameTie = yourScore.value == computerScore.value; 
 
-  if (playerWins) {
-    result.textContent = "Congratulations! You've won!";
-  } else if (playerLoses) {
-    result.textContent = "Oh no! You lose! Try again!";
-  } else (gameTie) {
-    result.textContent = "It's a draw!";
-  }
-};
 
 
 //Add reset button function in here 
