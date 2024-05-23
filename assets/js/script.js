@@ -37,23 +37,12 @@ function loadGame() {
   document.getElementById("home").style.display = "none";
 }
 
-/** 
-function myFunction() {
-  document.getElementById("myDIV").style.display = "none";
-  document.getElementById("myDIV2").style.display = "block";
-}
-
-function myFunction2() {
-  document.getElementById("myDIV2").style.display = "none";
-  document.getElementById("myDIV").style.display = "block";
-}*/
-
 //Variables used 
 let start = document.getElementById("start-game");
 let buttons = document.getElementsByClassName("button-round");
 let options = ["rock", "paper", "scissors", "lizard", "spock"];
-let yourScore = document.getElementById("score");
-let computerScore = document.getElementById("incorrect");
+/**let yourScore = document.getElementById("score");
+let computerScore = document.getElementById("incorrect");*/
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let result = document.getElementById("results");
@@ -64,16 +53,6 @@ let paper = document.getElementById("paper");
 let scissors = document.getElementById("scissors");
 let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
-
-
-//Add Event listener for button clicks 
-/**for (let button of buttons) {
-  button.addEventListener("click", function()) {
-    let playerSelection = this.getAttribute("data-type");
-    runGame(playerSelection);
-  }
-}
-*/
 
 //Add event listeners for player selection 
 rock.addEventListener("click", runGame("rock"));
@@ -87,8 +66,16 @@ let currentRound = 1;
 const totalRounds = 3; 
 const displayedRounds = document.getElementById("total-rounds");
 
+//Player and Computer Score 
+let yourScore = 0; 
+let computerScore = 0;
+const yourScoreResult = document.getElementById("score");
+const computerScoreResult = document.getElementById("incorrect");
+
 //Game run function below 
 function runGame(playerSelection) {
+
+  displayedRounds.textContent = `${currentRound}`;
 
   playerImage.src = `assets/images/${options[playerSelection]}.webp`;
   playerImage.alt = options[playerSelection];
@@ -118,6 +105,10 @@ function runGame(playerSelection) {
         result.textContent = "You lose!";
         computerScore++; 
     }  
+
+    yourScoreResult.textContent = `${yourScore}`;
+    computerScoreResult.textContent = `${computerScore}`;
+
   }
 
 
@@ -134,3 +125,13 @@ function gameResult() {
 
 
 //Add reset button function in here 
+
+
+//Add Event listener for button clicks 
+/**for (let button of buttons) {
+  button.addEventListener("click", function()) {
+    let playerSelection = this.getAttribute("data-type");
+    runGame(playerSelection);
+  }
+}
+*/
