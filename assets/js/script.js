@@ -66,7 +66,7 @@ function runGame(playerSelection) {
   playerImage.src = `assets/images/${options[playerSelection]}.webp`;
   playerImage.alt = options[playerSelection];
 
-  let computerSelection = Math.floor((Math.random) * 4);
+  let computerSelection = Math.floor((Math.random) * options.length);
 
   computerImage.src = `assets/images/${options[computerSelection]}`;
   computerImage.alt = options[computerSelection];
