@@ -34,15 +34,13 @@ function loadHome() {
 
 function loadGame() {
   document.getElementById("game").style.display = "block";
-  document.getElementById("home").style.display = "none";
+  document.getElementById("home").style.display = "block";
 }
 
 //Variables used 
 let start = document.getElementById("start-game");
 let buttons = document.getElementsByClassName("button-round");
 let options = ["rock", "paper", "scissors", "lizard", "spock"];
-let yourScore = document.getElementById("score");
-let computerScore = document.getElementById("incorrect");
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let result = document.getElementById("results");
@@ -67,6 +65,10 @@ const totalRounds = 3;
 const displayedRounds = document.getElementById("total-rounds");
 
 //Player and Computer Score 
+let yourScore = document.getElementById("score");
+let computerScore = document.getElementById("incorrect");
+yourScore = 0;
+computerScore = 0;
 
 //Game run function below 
 function runGame(playerSelection) {
@@ -102,24 +104,38 @@ function runGame(playerSelection) {
         computerScore++; 
     }  
 
-    let yourScoreResult = 
+    let yourScoreResult = yourScore;
+    let computerScoreResult = computerScore; 
 
     yourScoreResult.textContent = `${yourScore}`;
     computerScoreResult.textContent = `${computerScore}`;
     
+    currentRound++;
+
     if (currentRound > totalRounds) {
-      gameResult();
+      
     }
   }
 
 
 //Add game finished and game over function in here 
-
-
+/**function gameResult() {
+  if (yourScoreResult > computerScoreResult) {
+    result.textContent = `Congratulations! You've won!`;
+  } else if (yourScoreResult < computerScoreResult) {
+    result.textContent = `Oh no! You lose! Try again!`;
+  } else (yourScoreResult === computerScoreResult) {
+    result.textContent = `It's a draw!`;
+  }
+}
+*/
 
 //Add reset button function in here 
 function resetGame() {
   
+  let reset = document.getElementById("reset-game");
+  reset.addEventListener("click", resetGame());
+
   yourScore = 0;
   computerScore = 0;
   currentRound = 1;
