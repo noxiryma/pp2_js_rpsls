@@ -124,6 +124,10 @@ p {
   cursor: pointer;
 }
 
+#big-bang {
+    margin-top: 2%;
+}
+
 /*Game Page*/
 
 .game-area {

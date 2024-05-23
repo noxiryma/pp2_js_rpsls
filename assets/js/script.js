@@ -108,7 +108,8 @@ function runGame(playerSelection) {
 
     yourScoreResult.textContent = `${yourScore}`;
     computerScoreResult.textContent = `${computerScore}`;
-
+    
+    
   }
 
 
