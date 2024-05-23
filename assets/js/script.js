@@ -113,22 +113,10 @@ function runGame(playerSelection) {
     currentRound++;
 
     if (currentRound > totalRounds) {
-      
+      endGame();
     }
   }
 
-
-//Add game finished and game over function in here 
-/**function gameResult() {
-  if (yourScoreResult > computerScoreResult) {
-    result.textContent = `Congratulations! You've won!`;
-  } else if (yourScoreResult < computerScoreResult) {
-    result.textContent = `Oh no! You lose! Try again!`;
-  } else (yourScoreResult === computerScoreResult) {
-    result.textContent = `It's a draw!`;
-  }
-}
-*/
 
 //Add reset button function in here 
 function resetGame() {
@@ -142,11 +130,17 @@ function resetGame() {
 
 }
 
-//Add Event listener for button clicks 
-/**for (let button of buttons) {
-  button.addEventListener("click", function()) {
-    let playerSelection = this.getAttribute("data-type");
-    runGame(playerSelection);
+//endGame function defined here 
+
+function endGame() {
+  if (currentRound >= totalRounds){
+    
+    if (yourScore > computerScore){
+      result.textContent = `Congratulations! You've won!`;
+    } else if (yourScore < computerScore){
+        result.textContent = `Oh no! You lose! Try again!`;
+    } else (yourScore == computerScore){
+      result.textContent = `It's a draw!`;
+    }
   }
 }
-*/
