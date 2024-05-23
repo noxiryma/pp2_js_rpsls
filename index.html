@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body>
-    <h1 class = "heading"><a href="index.html" target="_self">Rock Paper Scissors Lizard Spock</a></h1>
+<body onload="loadHome()">
+    <h1 class = "heading">Rock Paper Scissors Lizard Spock</h1>
+<div class="navigation-buttons">
+    <button onclick="loadHome()" class="button-options home-button">Home</button>  
 
-<div class="instruction-area">
-
-    <button onclick="document.getElementById('modal').style.display='block'" class="button-options" id="modal-button">The
+    <button onclick="document.getElementById('modal').style.display='block'" class="button-options rules" id="modal-button">The
         Rules</button>
 
     <div id="modal" class="modal">
@@ -51,16 +51,58 @@
         </div>
     </div>
 
+    <button onclick="loadGame()" class="button-options load-game" id="start-game">Start Game</button>
+
+
+    <button class="button-options reset-game-button" id="reset-game">Reset game</button>
+    </div>
+
+</div>
+
+<div class="home" id="home">
+
     <div class="you-vs-computer">
         <img src="assets/images/you.webp" alt="" class="you-vs-image">
 
         <h2>VS</h2>
 
         <img src="assets/images/computer.webp" alt="" class="you-vs-image">
+    </div>
+</div>
+
+<!-- Game area -->
+<div class="game" id="game">
+
+    <div class="you-vs-computer">
+        <img src="assets/images/you.webp" alt="" class="you-vs-image">
+        
+        <h2>VS</h2>
+
+        <img src="assets/images/computer.webp" alt="" class="you-vs-image">
 
     </div>
+    
+    <h3>Best of 3 wins!</h3>
 
-    <button class="button-options" id="start-game"><a href="game.html" target="_self">Start Game</a></button>
+    <div class = "rounds">
+        <h2>Round: <span id="total-rounds">0</span></h2>
+        </div>
+    <div id="results"></div>
+
+    <div class="score-area">
+        <p class="scores">Your score: <span id="score">0</span></p>
+        <p class="scores">Computer score: <span id="incorrect">0</span></p>
+    </div>
+
+    <div class="game-area-buttons">
+        <div>
+            <button aria-label="Rock" data-type="rock" id="rock" class="button-round"></button>
+            <button aria-label="Paper" data-type="paper" id="paper" class="button-round"></button>
+            <button aria-label="Scissors" data-type="scissors" id="scissors" class="button-round"></button>
+            <button aria-label="Lizard" data-type="lizard" id="lizard" class="button-round"></button>
+            <button aria-label="Spock" data-type="spock" id="spock" class="button-round"></button>
+        </div>
+    </div>
 
 </div>
 

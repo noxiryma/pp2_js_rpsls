@@ -24,6 +24,30 @@ window.onclick = function(event) {
   }
 } 
 
+
+//Loads Game 
+
+function loadHome() {
+    document.getElementById("home").style.display = "block";
+    document.getElementById("game").style.display = "none";
+}
+
+function loadGame() {
+  document.getElementById("game").style.display = "block";
+  document.getElementById("home").style.display = "none";
+}
+
+/** 
+function myFunction() {
+  document.getElementById("myDIV").style.display = "none";
+  document.getElementById("myDIV2").style.display = "block";
+}
+
+function myFunction2() {
+  document.getElementById("myDIV2").style.display = "none";
+  document.getElementById("myDIV").style.display = "block";
+}*/
+
 //Variables used 
 let start = document.getElementById("start-game");
 let buttons = document.getElementsByClassName("button-round");
@@ -45,7 +69,7 @@ let spock = document.getElementById("spock");
 //Add Event listener for button clicks 
 /**for (let button of buttons) {
   button.addEventListener("click", function()) {
-    let playerSelection = this.getAttribute("data-choice");
+    let playerSelection = this.getAttribute("data-type");
     runGame(playerSelection);
   }
 }
@@ -58,7 +82,10 @@ scissors.addEventListener("click", runGame("scissors"));
 lizard.addEventListener("click", runGame("lizard"));
 spock.addEventListener("click", runGame("spock"));
 
-//Add number of rounds function so knows when to close loop 
+//Add number of rounds function so knows when to close game loop 
+let currentRound = 1;
+const totalRounds = 3; 
+const displayedRounds = document.getElementById("total-rounds");
 
 //Game run function below 
 function runGame(playerSelection) {
@@ -68,7 +95,7 @@ function runGame(playerSelection) {
 
   let computerSelection = Math.floor((Math.random) * options.length);
 
-  computerImage.src = `assets/images/${options[computerSelection]}`;
+  computerImage.src = `assets/images/${options[computerSelection]}.webp`;
   computerImage.alt = options[computerSelection];
 
   if (playerSelection === computerSelection) {
