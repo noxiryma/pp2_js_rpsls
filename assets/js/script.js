@@ -28,8 +28,8 @@ window.onclick = function(event) {
 //Loads Game 
 
 function loadHome() {
-    document.getElementById("home").style.display = "block";
-    document.getElementById("game").style.display = "none";
+  document.getElementById("home").style.display = "block";
+  document.getElementById("game").style.display = "none";
 }
 
 function loadGame() {
@@ -69,8 +69,6 @@ const displayedRounds = document.getElementById("total-rounds");
 //Player and Computer Score 
 let yourScore = 0; 
 let computerScore = 0;
-const yourScoreResult = document.getElementById("score");
-const computerScoreResult = document.getElementById("incorrect");
 
 //Game run function below 
 function runGame(playerSelection) {
@@ -106,6 +104,9 @@ function runGame(playerSelection) {
         computerScore++; 
     }  
 
+    let yourScoreResult = document.getElementById("score");
+    let computerScoreResult = document.getElementById("incorrect");
+
     yourScoreResult.textContent = `${yourScore}`;
     computerScoreResult.textContent = `${computerScore}`;
     
@@ -118,11 +119,15 @@ function runGame(playerSelection) {
 //Add game finished and game over function in here 
 function gameResult() {
   let playerWins = yourScore.value > computerScore.value;
-  
+  let playerLoses = yourScore.value < computerScore.value; 
+  let gameTie = yourScore.value == computerScore.value; 
+
   if (playerWins) {
     result.textContent = "Congratulations! You've won!";
-  } else {
+  } else if (playerLoses) {
     result.textContent = "Oh no! You lose! Try again!";
+  } else (gameTie) {
+    result.textContent = "It's a draw!";
   }
 };
 
@@ -130,6 +135,10 @@ function gameResult() {
 //Add reset button function in here 
 function resetGame() {
   
+  yourScore = 0;
+  computerScore = 0;
+  currentRound = 1;
+
 }
 
 //Add Event listener for button clicks 
