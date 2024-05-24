@@ -64,8 +64,8 @@ const displayedRounds = document.getElementById("total-rounds");
 //Player and Computer Score 
 let yourScore = document.getElementById("score");
 let computerScore = document.getElementById("incorrect");
-yourScore = 0;
-computerScore = 0;
+yourScore.textContent = 0;
+computerScore.textContent = 0; 
 
 //Game run function below 
 function runGame(playerSelection) {
@@ -117,17 +117,14 @@ function runGame(playerSelection) {
         (playerSelection === "spock" && computerSelection === "rock") 
     ) {
         result.textContent = "You win!";
-        yourScore++; 
+        yourScore += 1; 
       } else {
         result.textContent = "You lose!";
-        computerScore++; 
+        computerScore += 1; 
     }  
 
-    let yourScoreResult = yourScore;
-    let computerScoreResult = computerScore; 
-
-    yourScoreResult.textContent = `${yourScore}`;
-    computerScoreResult.textContent = `${computerScore}`;
+    yourScore.textContent = `${yourScore}`;
+    computerScore.textContent = `${computerScore}`;
     
     currentRound++;
 
@@ -152,8 +149,7 @@ function resetGame() {
 //endGame function defined here 
 
 function endGame() {
-  if (currentRound >= totalRounds){
-    
+
     if (yourScore > computerScore){
       result.textContent = `Congratulations! You've won!`;
     } else if (yourScore < computerScore){
@@ -161,5 +157,4 @@ function endGame() {
     } else if (yourScore == computerScore) {
       result.textContent = `It's a draw!`;
     }
-  }
 }
