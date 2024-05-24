@@ -25,10 +25,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body onload="loadHome()">
+<body>
     <h1 class = "heading">Rock Paper Scissors Lizard Spock</h1>
 <div class="navigation-buttons">
-    <button onclick="loadHome()" class="button-options home-button">Home</button>  
+   <button onclick="loadHome()" class="button-options home-button">Home</button>
 
     <button onclick="document.getElementById('modal').style.display='block'" class="button-options rules" id="modal-button">The
         Rules</button>
@@ -92,7 +92,7 @@
 
     <div class="game-area-buttons">
         <div>
-            <button aria-label="Rock" data-type="rock" id="rock" class="button-round"></button>
+            <button onclick="runGame()" aria-label="Rock" data-type="rock" id="rock" class="button-round"></button>
             <button aria-label="Paper" data-type="paper" id="paper" class="button-round"></button>
             <button aria-label="Scissors" data-type="scissors" id="scissors" class="button-round"></button>
             <button aria-label="Lizard" data-type="lizard" id="lizard" class="button-round"></button>

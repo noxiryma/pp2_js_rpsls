@@ -34,13 +34,10 @@ function loadHome() {
 
 function loadGame() {
   document.getElementById("game").style.display = "block";
-  document.getElementById("home").style.display = "block";
 }
 
 //Variables used 
 let start = document.getElementById("start-game");
-let buttons = document.getElementsByClassName("button-round");
-let options = ["rock", "paper", "scissors", "lizard", "spock"];
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let result = document.getElementById("results");
@@ -53,11 +50,11 @@ let lizard = document.getElementById("lizard");
 let spock = document.getElementById("spock");
 
 //Add event listeners for player selection 
-rock.addEventListener("click", runGame("rock"));
-paper.addEventListener("click", runGame("paper"));
-scissors.addEventListener("click", runGame("scissors"));
-lizard.addEventListener("click", runGame("lizard"));
-spock.addEventListener("click", runGame("spock"));
+rock.addEventListener("click", () => runGame("rock"));
+paper.addEventListener("click", () => runGame("paper"));
+scissors.addEventListener("click", () => runGame("scissors"));
+lizard.addEventListener("click", () => runGame("lizard"));
+spock.addEventListener("click", () => runGame("spock"));
 
 //Add number of rounds function so knows when to close game loop 
 let currentRound = 1;
@@ -74,6 +71,8 @@ computerScore = 0;
 function runGame(playerSelection) {
 
   displayedRounds.textContent = `${currentRound}`;
+
+  let options = ["rock", "paper", "scissors", "lizard", "spock"];
 
   playerImage.src = `assets/images/${options[playerSelection]}.webp`;
   playerImage.alt = options[playerSelection];
@@ -134,12 +133,12 @@ function resetGame() {
 
 function endGame() {
   if (currentRound >= totalRounds){
-    
+
     if (yourScore > computerScore){
       result.textContent = `Congratulations! You've won!`;
     } else if (yourScore < computerScore){
         result.textContent = `Oh no! You lose! Try again!`;
-    } else (yourScore == computerScore){
+    } else if (yourScore == computerScore) {
       result.textContent = `It's a draw!`;
     }
   }

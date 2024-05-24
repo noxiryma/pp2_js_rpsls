@@ -22,7 +22,7 @@ p {
     padding: 0 28%; 
 }
 
-.home, .game {
+.home {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -34,6 +34,21 @@ p {
     padding: 1%;
     text-align: center;
 }
+
+.game {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 85%;
+    height: 5%;
+    max-height: 90%;
+    max-width: 90%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+
 
 .you-vs-computer {
     border: solid 2px rgba(0, 0, 0, 1.0);
