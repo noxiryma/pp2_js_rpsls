@@ -74,12 +74,32 @@ function runGame(playerSelection) {
 
   let options = ["rock", "paper", "scissors", "lizard", "spock"];
 
-  playerImage.src = `assets/images/${options[playerSelection]}.webp`;
+  playerImage.src = `assets/images/${playerSelection}.webp`;
   playerImage.alt = options[playerSelection];
 
-  let computerSelection = Math.floor((Math.random) * options.length);
+  let randomNumber = Math.floor(Math.random() * 5) +1;
 
-  computerImage.src = `assets/images/${options[computerSelection]}.webp`;
+    let computerSelection;
+
+    switch(randomNumber) {
+        case 1:
+            computerSelection = "rock";
+            break;
+        case 2:
+            computerSelection = "paper";
+            break;
+        case 3:
+            computerSelection = "scissors";
+            break;
+        case 4:
+            computerSelection = "lizard";
+            break;
+        case 5:
+            computerSelection = "spock";
+            break;
+    }
+
+  computerImage.src = `assets/images/${computerSelection}.webp`;
   computerImage.alt = options[computerSelection];
 
   if (playerSelection === computerSelection) {
@@ -133,7 +153,7 @@ function resetGame() {
 
 function endGame() {
   if (currentRound >= totalRounds){
-
+    
     if (yourScore > computerScore){
       result.textContent = `Congratulations! You've won!`;
     } else if (yourScore < computerScore){
