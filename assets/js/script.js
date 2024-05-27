@@ -58,14 +58,14 @@ spock.addEventListener("click", () => runGame("spock"));
 
 //Add number of rounds function so knows when to close game loop 
 let currentRound = 1;
-const totalRounds = 3; 
+const totalRounds = 5; 
 const displayedRounds = document.getElementById("total-rounds");
 
 //Player and Computer Score 
-let yourScore = document.getElementById("score");
-let computerScore = document.getElementById("incorrect");
-yourScore.textContent = 0;
-computerScore.textContent = 0; 
+let yourScore = 0;
+let computerScore = 0; 
+const yourScoreDisplay = document.getElementById("score");
+const computerScoreDisplay = document.getElementById("incorrect");
 
 //Game run function below 
 function runGame(playerSelection) {
@@ -117,14 +117,14 @@ function runGame(playerSelection) {
         (playerSelection === "spock" && computerSelection === "rock") 
     ) {
         result.textContent = "You win!";
-        yourScore += 1; 
+        yourScore ++; 
       } else {
         result.textContent = "You lose!";
-        computerScore += 1; 
+        computerScore ++; 
     }  
 
-    yourScore.textContent = `${yourScore}`;
-    computerScore.textContent = `${computerScore}`;
+    yourScoreDisplay.textContent = `${yourScore}`;
+    computerScoreDisplay.textContent = `${computerScore}`;
     
     currentRound++;
 

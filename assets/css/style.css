@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, button {
     font-style: normal;
 }
 
-p {
+p, #results {
     font-family: "Teko", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -166,6 +166,10 @@ p {
 
 }
 
+#results {
+    font-size: 150%;
+    color: #024059;
+}
 
 /*game area*/
 .game-area-buttons {
