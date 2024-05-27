@@ -128,9 +128,10 @@ function runGame(playerSelection) {
     
     currentRound++;
 
-    if (currentRound > totalRounds) {
-      endGame();
+    if (currentRound > totalRounds){
+      endGame(); 
     }
+
   }
 
 
@@ -155,13 +156,18 @@ function resetGame() {
 
 //endGame function defined here 
 
-function endGame() {
+/** for (totalPlayedRounds = 0; totalPlayedRounds < 5; totalPlayedRounds++;){
+  if (totalPlayedRounds === 5) {break;}
+}*/
 
+
+function endGame() {
     if (yourScore > computerScore){
       result.textContent = `Congratulations! You've won!`;
     } else if (yourScore < computerScore){
         result.textContent = `Oh no! You lose! Try again!`;
-    } else if (yourScore == computerScore) {
+    } else if (yourScore === computerScore) {
       result.textContent = `It's a draw!`;
     }
 }
+
