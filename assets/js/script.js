@@ -151,6 +151,8 @@ function resetGame() {
   yourScoreDisplay.textContent = 0;
   computerScoreDisplay.textContent = 0;
   result.textContent = "";
+  playerImage.src = `assets/images/you.webp`;
+  computerImage.src = `assets/images/computer.webp`;
 
 }
 
