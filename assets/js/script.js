@@ -135,14 +135,21 @@ function runGame(playerSelection) {
 
 
 //Add reset button function in here 
-function resetGame() {
-  
-  let reset = document.getElementById("reset-game");
-  reset.addEventListener("click", resetGame());
 
+let reset = document.getElementById("reset-game");
+reset.addEventListener("click", resetGame());
+
+function resetGame() {
+
+  displayedRounds.textContent = 0;
+  yourScoreDisplay.textContent = 0;
+  computerScoreDisplay.textContent = 0;
   yourScore = 0;
   computerScore = 0;
   currentRound = 1;
+  yourScoreDisplay.textContent = 0;
+  computerScoreDisplay.textContent = 0;
+  result.textContent = "";
 
 }
 
