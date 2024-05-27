@@ -126,7 +126,7 @@ function runGame(playerSelection) {
     yourScoreDisplay.textContent = `${yourScore}`;
     computerScoreDisplay.textContent = `${computerScore}`;
     
-    currentRound++;
+    currentRound ++;
 
     if (currentRound > totalRounds){
       endGame(); 
