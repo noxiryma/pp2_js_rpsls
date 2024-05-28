@@ -144,15 +144,17 @@ Used to build the structure of the web pages
 
 To style the website 
 
-### Fontawesome 
+### Javascript 
 
-For the social media icons for the footer 
+Detail in here the different functions, onclick events, event listeners, score incrementation, round incrementation, random choice generator for computer
 
 ### Googlefonts
 
 For the selection and use of a font style for the website 
 
+### Pixelied 
 
+Used to convert png files to webp files for images used. 
 
 <a name="testing"></a>
 ## Testing 
@@ -173,10 +175,17 @@ For the selection and use of a font style for the website
 
 No errors were presented upon final testing in [HTML validator](https://validator.w3.org/). 
 
+![HTML validator](assets/images/readme_images/html_checker_good.webp)
+
 
 ## CSS Validation Testing 
 
 No errors were presented upon final testing in [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+![CSS validator](assets/images/readme_images/css_validator_good.webp)
+
+## Javascript Validation Testing 
+
 
 
 ## Google Lighthouse Testing 
