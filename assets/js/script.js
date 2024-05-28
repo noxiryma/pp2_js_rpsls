@@ -25,7 +25,6 @@ window.onclick = function(event) {
 } 
 
 //Loads Game 
-
 function loadHome() {
   document.getElementById("home").style.display = "block";
   document.getElementById("game").style.display = "none";
@@ -101,6 +100,7 @@ function runGame(playerSelection) {
   computerImage.src = `assets/images/${computerSelection}.webp`;
   computerImage.alt = options[computerSelection];
 
+  // Determines the results of each round of game played 
   if (playerSelection === computerSelection) {
     result.textContent = "Draw!";
     } else if (
@@ -122,11 +122,14 @@ function runGame(playerSelection) {
         computerScore ++; 
     }  
 
+    //Displays score for user
     yourScoreDisplay.textContent = `${yourScore}`;
     computerScoreDisplay.textContent = `${computerScore}`;
     
+    //Increments number of rounds played 
     currentRound ++;
 
+    //End of game at 5 rounds 
     if (currentRound > totalRounds){
       endGame(); 
     }
@@ -134,7 +137,7 @@ function runGame(playerSelection) {
   }
 
 
-//Add reset button function in here 
+//Reset game button function and variable
 
 let reset = document.getElementById("reset-game");
 reset.addEventListener("click", resetGame());
@@ -155,12 +158,7 @@ function resetGame() {
 
 }
 
-//endGame function defined here 
-
-/** for (totalPlayedRounds = 0; totalPlayedRounds < 5; totalPlayedRounds++;){
-  if (totalPlayedRounds === 5) {break;}
-}*/
-
+//endGame function
 
 function endGame() {
     if (yourScore > computerScore){
