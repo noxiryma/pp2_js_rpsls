@@ -166,6 +166,11 @@ p, #results {
 
 }
 
+.scores {
+    border: solid 3px rgba(0, 0, 0, 1.0);
+    border-radius: 15px;
+}
+
 #results {
     font-size: 150%;
     color: #024059;
@@ -218,7 +223,7 @@ p, #results {
 
 .heading {
     padding: 0 15%;
-        font-size: 150%;
+    font-size: 150%;
 }
 
 
@@ -239,14 +244,6 @@ p, #results {
 .button-options {
     margin-bottom: 2%;
     width: 100%;
-}
-
-#reset-game {
-    display: none;
-}
-
-#reset-game-mobile {
-    display: block;
 }
 
 .you-vs-computer {
@@ -301,8 +298,8 @@ p, #results {
 }
 
 #big-bang {
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 193px;
 }
 
 .button-options {
@@ -325,6 +322,11 @@ p, #results {
 
 @media screen and (min-width: 768px) {
 
+.heading {
+    font-size: 180%;
+    padding: 0 2%;
+}
+
 .navigation-buttons {
     flex-direction: column;
 }
@@ -334,26 +336,23 @@ p, #results {
     margin-bottom: 2%;
 }
 
-#reset-game {
-    display: none;
-}
-
-#reset-game-mobile {
-    display: block;
-}
-
 #big-bang {
-    width: 100%;
+    width: 500px;
+    height: 255px;
 }
 
 .modal-content {
     font-size: 150%;
+    width: 80%;
+}
+
+.you-vs-computer {
+    width: 80%;
 }
 
 .you-vs-image {
     width: 125px;
     height: 125px;
-
 }
 
 .scores {
@@ -376,5 +375,39 @@ p, #results {
     height: 125px;
 }
 
+}
+
+@media screen and (min-width: 1024px) {
+
+.heading {
+    font-size: 200%;
+}
+
+.navigation-buttons {
+    margin-top: 5%;
+    flex-direction: row;
+}
+
+.modal-content {
+    width: 80%; 
+}
+
+#big-bang {
+    width: 655px;
+    height: 315px;
+}
+
+.button-options {
+    width: 25%;
+}
+
+.you-vs-computer {
+    width: 55%;
+}
+
+.you-vs-image {
+    width: 150px;
+    height: 150px;
+}
 
 }
