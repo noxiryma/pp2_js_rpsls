@@ -6,8 +6,8 @@
 
 
 
-## **[Live Site](https://noxiryma.github.io/projectportfolio1_meditation/index.html)**
-## **[Repository](https://github.com/noxiryma/projectportfolio1_meditation)**
+## **[Live Site](https://noxiryma.github.io/pp2_js_rpsls/)**
+## **[Repository](https://github.com/noxiryma/pp2_js_rpsls)**
 
 
 ## Table of contents
