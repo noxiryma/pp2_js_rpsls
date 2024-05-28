@@ -29,8 +29,8 @@
 This website is part of my second portfolio project for the Code Institute's Full Stack Software Developer Diploma. The required main
 technologies for this project were:
 
-HTML
-CSS 
+HTML,
+CSS, 
 and Javascript. 
 
 I chose to create a site using the Project Portfolio example 1 in which the brief was to build a Rock, Paper, Scissors, Lizard, Spock
@@ -53,7 +53,7 @@ colours.
 
 The font family used for this site is 
 
-"Bungee", sans-serif 
+### "Bungee", sans-serif 
 
 ![Bungee screenshot](assets/images/readme_images/bungee_font.webp)
 
@@ -61,7 +61,7 @@ with a weight of 400 the font is easy to read and prints the text on the page in
 
 For the rest of the content outside of h1 to h6 and the buttons. I used a different font called 
 
-"Teko", sans-serif;
+### "Teko", sans-serif;
 
 ![Teko screenshot](assets/images/readme_images/teko_font.webp)
 
@@ -80,9 +80,20 @@ The first being the home page. This is the landing page for the site and display
 ### Navigation Buttons
 As the user hovers over the buttons with a mouse they change colour to highlight this is the one they are about to select. I styled the buttons in CSS and added rounded corners to them to create a pleasant and modern appearance rather than a harsh box. 
 
-![Navigation buttons]()
+![Navigation buttons](assets/images/readme_images/button_hover_feature.webp)
 
 I placed the navigation buttons in order from left to right as to how the user should navigate through them. First clicking on the rules button to learn the rules of the game. Then clicking on the start game function to start the game. 
+
+On smaller screens from 320px up to 768px the navigation buttons flex direction were changed from row to column. 
+
+![Navigation buttons mobile 320px](assets/images/readme_images/320px_home.webp)
+
+For mobile phones from 320px to 480px I did consider adding in a burger menu but wanted to reduce the number of clicks on the website for the user to start playing the game. I felt that centering, increasing the width and adding a margin in between the buttons would still make the navigation menu easy for the user to use whilst keeping a neat and smooth appearance. 
+
+![Navigation buttons mobile 480px](assets/images/readme_images/480px_home.webp)
+
+The navigation buttons on a 480px screen up to 1024px still take up a large width of the screen but it has been reduced with the width value changed so that the buttons sit just within the you vs computer box underneath. This I also felt kept in with the style of a button clicking game. 
+
 
 ### The Rules 
 
@@ -91,6 +102,8 @@ Upon clicking on the rules button a modal appears on the webpage with an embedde
 ![Modal](assets/images/readme_images/modal.webp)
 
 On smaller screens the video is adapted in size to fit the width and height of the modal using styling in CSS. 
+
+![320px Modal](assets/images/readme_images/320px_modal.webp)
 
 ### Start Game 
 
