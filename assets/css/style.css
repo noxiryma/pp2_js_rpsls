@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5, h6, button {
 
 p, #results {
     font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -458,6 +457,10 @@ p, #results {
 
 /* Game Area */
 
+.scores {
+    font-size: 100%;
+}
+
 .game-area-buttons {
     display: inline;
 }
@@ -486,7 +489,6 @@ p, #results {
 }
 
 .button-options {
-    font-size: 125%;
     margin-bottom: 1%;
 }
 
@@ -510,6 +512,6 @@ p, #results {
 }
 
 #your-score, #comp-score {
-    font-size: 115%;
+    font-size: 100%;
 }
 }
