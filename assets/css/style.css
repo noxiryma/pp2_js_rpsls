@@ -214,7 +214,7 @@ p, #results {
 
 /* Media query: large or landscape phones (320px and up) */
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
 .heading {
     padding: 0 15%;
@@ -289,5 +289,92 @@ p, #results {
     margin-bottom: 3%;
     padding: 0 1%;
 }
+
+}
+
+
+@media screen and (min-width: 480px) {
+
+.modal-content {
+    font-size: 150%;
+    width: 75%;
+}
+
+#big-bang {
+    width: 100%;
+    height: 100%;
+}
+
+.button-options {
+    width: 75%;
+}
+
+.you-vs-image {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.button-round {
+    width: 100px;
+    height: 100px;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+
+.navigation-buttons {
+    flex-direction: column;
+}
+
+.button-options {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+#reset-game {
+    display: none;
+}
+
+#reset-game-mobile {
+    display: block;
+}
+
+#big-bang {
+    width: 100%;
+}
+
+.modal-content {
+    font-size: 150%;
+}
+
+.you-vs-image {
+    width: 125px;
+    height: 125px;
+
+}
+
+.scores {
+    font-size: 70%;
+    padding: 0 5%;
+    border: solid 3px rgba(0, 0, 0, 1.0);
+}
+
+#your-score {
+    padding: 0 8%; 
+    margin-right: 3%;
+}
+
+#comp-score {
+    margin-left: 3%;
+}
+
+.button-round {
+    width: 125px;
+    height: 125px;
+}
+
 
 }
