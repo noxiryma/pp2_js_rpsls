@@ -24,7 +24,6 @@ window.onclick = function(event) {
   }
 } 
 
-
 //Loads Game 
 
 function loadHome() {
