@@ -53,16 +53,19 @@ colours.
 
 The font family used for this site is 
 
-"Montserrat Alternates", sans-serif; 
+"Bungee", sans-serif 
 
-![Montserrat Alternates 400 screenshot](assets/images/readme-images/montserrat-400.jpg)
+![Bungee screenshot](assets/images/readme_images/bungee_font.webp)
 
-with a weight of 400 for the main content and a weight of 700 for the title header. Used to imply a logo for the site and give a clear heading.
+with a weight of 400 the font is easy to read and prints the text on the page in all capital letters. Much like old arcade games. 
 
-![Montserrat Alternates 700 screenshot](assets/images/readme-images/montserrat-700.jpg)
+For the rest of the content outside of h1 to h6 and the buttons. I used a different font called 
 
+"Teko", sans-serif;
 
-The font was chosen for it’s accessibility as well as it’s design. The text is clear to read and has a more rounded style creating a smooth and relaxing experience for the user whilst they read and learn new information on the subject of meditation. 
+![Teko screenshot](assets/images/readme_images/teko_font.webp)
+
+The font was chosen for it’s accessibility as well as it’s design. The text is clear to read with lowercase and uppercase whilst also sitting with a similar style to Bungee. 
 
 <a name="features"></a>
 ## FEATURES
