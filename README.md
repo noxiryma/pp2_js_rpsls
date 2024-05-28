@@ -1,6 +1,6 @@
-# Project Portfolio 1 - So Hum 
-## A meditation for beginners website with a fictional meditation group 
-### PP1 - Amy Rixon - 19/04/2024
+# Project Portfolio 2 - Rock Paper Scissors Lizard Spock
+## An interactive game based off the variation from the Big Bang Theory 
+### PP2 - Amy Rixon - 28/05/2024
 
 ![I am responsive screenshot](assets/images/readme_images/air_rpsls.webp)
 
@@ -26,10 +26,27 @@
 <a name="about"></a>
 ## About 
 
+This website is part of my second portfolio project for the Code Institute's Full Stack Software Developer Diploma. The required main
+technologies for this project were:
+
+HTML
+CSS 
+and Javascript. 
+
+I chose to create a site using the Project Portfolio example 1 in which the brief was to build a Rock, Paper, Scissors, Lizard, Spock
+game. The game was to involve a game of chance by the user being put up against a computer. Having been forced to watch Star Trek as 
+a child I thought it best to make a project my Mum would be proud of as a trekky.
+
+The design of the website was one that I wanted to kept quite simple so it was easy for the user to navigate. I also wanted to pay homage to The Big Bang Theory by creating a comic book style presentation a reference to the t-shirts that Sheldon was famous for wearing. I also looked to old style arcade games such as Space Invaders and Pac Man as influence on the styles of font used. 
+
 
 ### Colour Scheme 
 
-![Color wheel screenshot](assets/images/readme-images/color-wheel.jpg)
+![Color wheel screenshot](assets/images/readme_images/colour_scheme.webp)
+
+The colour scheme I decided to focus on was a minimalist approach to the colours found in a majority of the images selected for this 
+website. I focussed on the blue tone of Spock's smock to build the base of colour choice for this project rather than using clashing
+colours. 
 
 
 ### Font 
@@ -49,6 +66,49 @@ The font was chosen for it’s accessibility as well as it’s design. The text 
 
 <a name="features"></a>
 ## FEATURES
+
+### Home Page
+The website has 4 different pages presented to the user. 
+
+The first being the home page. This is the landing page for the site and displays the title of the game and the site at the top in clear bold writing. There are then 3 buttons displayed for the user to navigate. Home, The Rules and Start Game. 
+
+![Home page](assets/images/readme_images/home_page.webp)
+
+### Navigation Buttons
+As the user hovers over the buttons with a mouse they change colour to highlight this is the one they are about to select. I styled the buttons in CSS and added rounded corners to them to create a pleasant and modern appearance rather than a harsh box. 
+
+![Navigation buttons]()
+
+I placed the navigation buttons in order from left to right as to how the user should navigate through them. First clicking on the rules button to learn the rules of the game. Then clicking on the start game function to start the game. 
+
+### The Rules 
+
+Upon clicking on the rules button a modal appears on the webpage with an embedded video of Sheldon explaining the rules of the game to the user. I also included a text transcript of the rules underneath the video in case there are any hard of hearing users for the game you would not be able to read the subtitles of the video due to it's size on smaller screens. I added a start from and end video so that the rest of the content in the video which is not relevant to the game distracts from the object of learning the rules only. 
+
+![Modal](assets/images/readme_images/modal.webp)
+
+On smaller screens the video is adapted in size to fit the width and height of the modal using styling in CSS. 
+
+### Start Game 
+
+The start game button then loads the game underneath the main box on the home page of the You vs Computer images. This was created using an onclick function in Javascript getting the elements of the home and game area by their ID and using the display function. The user can navigate away from the game page by clicking the home button again.
+
+![Start game](assets/images/readme_images/start_game.webp)
+
+I decided to include this function after initially creating the game page as an external game.html file and looking other example game websites I realised it was cleaner and would allow me to use more Javascript features to have everything on one page. I also wanted the home page to look clean and not messy with the game underneath. 
+
+### Rounds 
+
+When the game first loads the round number is set to 0 and the user is informed that best of 5 games wins. As the user plays the round numbers increase with a result text declaring if the user has won, lost or drawn with the computer. The user score and the computer score is also updated as the rounds are played. Both of these features were written in Javascript using the increment and identifying the start numbers as zero. 
+
+![Rounds](assets/images/readme_images/round_result.webp)
+
+### User vs Computer images 
+
+
+
+
+
 
 ## Flex 
 
