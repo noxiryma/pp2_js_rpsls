@@ -2,7 +2,7 @@
 ## A meditation for beginners website with a fictional meditation group 
 ### PP1 - Amy Rixon - 19/04/2024
 
-![I am responsive screenshot](assets/images/readme-images/pp1shair.jpg)
+![I am responsive screenshot](assets/images/readme_images/air_rpsls.webp)
 
 
 
