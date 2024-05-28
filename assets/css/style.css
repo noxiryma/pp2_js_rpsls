@@ -13,14 +13,16 @@ p, #results {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
 
 .heading {
     text-align: center;
     position: relative;
     padding: 0 28%; 
 }
+
+
+/* Home */
 
 .home {
     display: flex;
@@ -34,7 +36,6 @@ p, #results {
     padding: 1%;
     text-align: center;
 }
-
 
 .you-vs-computer {
     border: solid 2px rgba(0, 0, 0, 1.0);
@@ -58,7 +59,8 @@ p, #results {
     border: solid 3px rgba(0, 0, 0, 1.0);
 }
 
-/* navigation button styling */
+
+/* Navigation Area */
 
 .button-options {
     border-radius: 15px;
@@ -83,6 +85,7 @@ p, #results {
     justify-content: space-around;
     margin-bottom: 3%;
 }
+
 
 /* Modal styling */
 
@@ -129,8 +132,8 @@ p, #results {
     margin-top: 2%;
 }
 
-/* Game Area */
 
+/* Game Area */
 
 .game {
     display: none;
@@ -144,17 +147,6 @@ p, #results {
     padding: 1%;
     text-align: center;
 } 
-
-/*.game {
-    width: 100%;
-    max-height: 90%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2%;
-    text-align: center;
-}*/
-
 
 .score-area {
     display: flex;
@@ -176,7 +168,6 @@ p, #results {
     color: #024059;
 }
 
-/*game area*/
 .game-area-buttons {
     display: flex;
     align-items: center;
@@ -214,7 +205,6 @@ p, #results {
     background: url(../images/spock.webp) no-repeat center/cover;
 }
 
-/* Add media queries below */
 
 
 /* Media query: large or landscape phones (320px and up) */
@@ -226,6 +216,8 @@ p, #results {
     font-size: 150%;
 }
 
+
+/* Navigation Area */
 
 .navigation-buttons {
     flex-direction: column;
@@ -246,6 +238,9 @@ p, #results {
     width: 100%;
 }
 
+
+/* Home */
+
 .you-vs-computer {
     border: solid 2px rgba(0, 0, 0, 1.0);
     background-color: #024059;
@@ -261,7 +256,10 @@ p, #results {
     height: 90px;
     margin-right: 2%;
     margin-left: 2%
-    }
+}
+
+
+/* Game Area */
 
 .scores {
     font-size: 70%;
@@ -287,10 +285,22 @@ p, #results {
     padding: 0 1%;
 }
 
+#rock, #scissors {
+    margin-right: 10%;
+}
+
+#paper, #lizard {
+    margin-left: 10%;
+}
+
 }
 
 
+/* Media query: large or landscape phones (480px and up) */
+
 @media screen and (min-width: 480px) {
+
+/* Navigation Area */
 
 .modal-content {
     font-size: 150%;
@@ -306,12 +316,17 @@ p, #results {
     width: 75%;
 }
 
+/* Home */
+
 .you-vs-image {
     width: 100px;
     height: 100px;
     margin-left: 5%;
     margin-right: 5%;
 }
+
+
+/* Game area */
 
 .button-round {
     width: 100px;
@@ -320,6 +335,8 @@ p, #results {
 }
 
 
+/* Media query: large or landscape Tablets (768px and up) */
+
 @media screen and (min-width: 768px) {
 
 .heading {
@@ -327,12 +344,15 @@ p, #results {
     padding: 0 2%;
 }
 
+
+/* Navigation Area */
+
 .navigation-buttons {
     flex-direction: column;
 }
 
 .button-options {
-    width: 50%;
+    width: 40%;
     margin-bottom: 2%;
 }
 
@@ -346,6 +366,9 @@ p, #results {
     width: 80%;
 }
 
+
+/* Home */
+
 .you-vs-computer {
     width: 80%;
 }
@@ -354,6 +377,9 @@ p, #results {
     width: 125px;
     height: 125px;
 }
+
+
+/* Game Area */
 
 .scores {
     font-size: 70%;
@@ -370,18 +396,34 @@ p, #results {
     margin-left: 3%;
 }
 
+.game-area-buttons {
+    display: inline;
+}
+
 .button-round {
-    width: 125px;
-    height: 125px;
+    width: 110px;
+    height: 110px;
+}
+
+#rock, #scissors, #paper, #lizard, #spock {
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 5%;
 }
 
 }
+
+
+/* Media query: large laptops or computer screens (1024px and up) */
 
 @media screen and (min-width: 1024px) {
 
 .heading {
     font-size: 200%;
 }
+
+
+/* Navigation Area */
 
 .navigation-buttons {
     margin-top: 5%;
@@ -401,6 +443,9 @@ p, #results {
     width: 25%;
 }
 
+
+/* Home */
+
 .you-vs-computer {
     width: 55%;
 }
@@ -410,4 +455,61 @@ p, #results {
     height: 150px;
 }
 
+
+/* Game Area */
+
+.game-area-buttons {
+    display: inline;
+}
+
+.button-round {
+    width: 150px;
+    height: 150px;
+}
+}
+
+
+/* Media query: large computer screens (1200px and up) */
+
+@media screen and (min-width: 1200px) {
+    
+.heading {
+    font-size: 250%;
+}
+
+
+/* Navigation Area */
+
+.navigation-buttons {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.button-options {
+    font-size: 125%;
+    margin-bottom: 1%;
+}
+
+.modal-content > p {
+    font-size: 150%;
+}
+
+
+/* Home */
+
+.you-vs-image {
+    width: 175px;
+    height: 175px;
+}
+
+
+/* Game Area */
+
+#results {
+    font-size: 250%;
+}
+
+#your-score, #comp-score {
+    font-size: 115%;
+}
 }
