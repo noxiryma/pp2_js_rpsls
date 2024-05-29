@@ -34,8 +34,15 @@ CSS,
 and Javascript. 
 
 I chose to create a site using the Project Portfolio example 1 in which the brief was to build a Rock, Paper, Scissors, Lizard, Spock
-game. The game was to involve a game of chance by the user being put up against a computer. Having been forced to watch Star Trek as 
-a child I thought it best to make a project my Mum would be proud of as a trekky.
+game. The game was to involve a game of chance by the user being put up against a computer. 
+
+The project requirements were to include: 
+
+>Pattern matching functionality
+>A limited number of tries before the game is over
+>A score tracking system
+>The ability to play against the computer
+
 
 The design of the website was one that I wanted to kept quite simple so it was easy for the user to navigate. I also wanted to pay homage to The Big Bang Theory by creating a comic book style presentation a reference to the t-shirts that Sheldon was famous for wearing. I also looked to old style arcade games such as Space Invaders and Pac Man as influence on the styles of font used. 
 
@@ -82,7 +89,7 @@ As the user hovers over the buttons with a mouse they change colour to highlight
 
 ![Navigation buttons](assets/images/readme_images/button_hover_feature.webp)
 
-I placed the navigation buttons in order from left to right as to how the user should navigate through them. First clicking on the rules button to learn the rules of the game. Then clicking on the start game function to start the game. 
+I placed the navigation buttons in order from left to right as to how the user should navigate through them. First clicking on the rules button to learn the rules of the game. Then clicking on the start game button to start the game. 
 
 On smaller screens from 320px up to 768px the navigation buttons flex direction were changed from row to column. 
 
@@ -92,12 +99,12 @@ For mobile phones from 320px to 480px I did consider adding in a burger menu but
 
 ![Navigation buttons mobile 480px](assets/images/readme_images/480px_home.webp)
 
-The navigation buttons on a 480px screen up to 1024px still take up a large width of the screen but it has been reduced with the width value changed so that the buttons sit just within the you vs computer box underneath. This I also felt kept in with the style of a button clicking game. 
+The navigation buttons on a 480px screen up to 1024px still take up a large width of the screen but it has been reduced with the width value changed using CSS so that the buttons sit just within the you vs computer box underneath. This I also felt kept in with the style of a button clicking game. 
 
 
 ### The Rules 
 
-Upon clicking on the rules button a modal appears on the webpage with an embedded video of Sheldon explaining the rules of the game to the user. I also included a text transcript of the rules underneath the video in case there are any hard of hearing users for the game you would not be able to read the subtitles of the video due to it's size on smaller screens. I added a start from and end video so that the rest of the content in the video which is not relevant to the game distracts from the object of learning the rules only. 
+Upon clicking on the rules button a modal appears on the webpage with an embedded video of Sheldon explaining the rules of the game to the user. I also included a text transcript of the rules underneath the video in case there are any hard of hearing users for the game as they would not be able to read the subtitles of the video due to it's size on smaller screens. I added a start from and end video so that the rest of the content in the video which is not relevant to the game distracts from the object of learning the rules only. 
 
 ![Modal](assets/images/readme_images/modal.webp)
 
@@ -111,7 +118,7 @@ The start game button then loads the game underneath the main box on the home pa
 
 ![Start game](assets/images/readme_images/start_game.webp)
 
-I decided to include this function after initially creating the game page as an external game.html file and looking other example game websites I realised it was cleaner and would allow me to use more Javascript features to have everything on one page. I also wanted the home page to look clean and not messy with the game underneath. 
+I decided to include this function after initially creating the game page as an external game.html file and looking at other example game websites I realised it was cleaner and would allow me to use more Javascript features to have everything on one page. I also wanted the home page to look clean and not messy with the game underneath. 
 
 ### Rounds 
 
