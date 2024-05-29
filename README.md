@@ -324,19 +324,19 @@ Font selected for website was taken from Google Fonts website.
 
 All images apart from the icon were generated on Leaonardo.ai website.
 
-![Rock](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/a9f90f90-fd8a-4555-8564-479388dea542/Default_rock_illustration_0.jpg)
+[Rock](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/a9f90f90-fd8a-4555-8564-479388dea542/Default_rock_illustration_0.jpg)
 
-![Paper](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/3dded6c8-8910-4f6c-936a-a66f8b2e1b87/Default_origami_bird_illustration_2.jpg)
+[Paper](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/3dded6c8-8910-4f6c-936a-a66f8b2e1b87/Default_origami_bird_illustration_2.jpg)
 
-![Scissors](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/29452663-eb0b-4b30-9223-f51729b1fdb5/Default_scissors_illustration_3.jpg)
+[Scissors](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/29452663-eb0b-4b30-9223-f51729b1fdb5/Default_scissors_illustration_3.jpg)
 
-![Lizard](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/c71c9ecb-96c4-403d-9ec4-3d1770b44d8e/Default_lizard_illustration_1.jpg)
+[Lizard](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/c71c9ecb-96c4-403d-9ec4-3d1770b44d8e/Default_lizard_illustration_1.jpg)
 
-![Spock](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/bb25e000-d5ff-451e-951e-93e298a650db/Default_spock_illustration_0.jpg)
+[Spock](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/bb25e000-d5ff-451e-951e-93e298a650db/Default_spock_illustration_0.jpg)
 
-![Computer](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/d07e31c2-a993-4ea4-a795-867ba1fbf946/Default_computer_comic_book_1.jpg)
+[Computer](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/d07e31c2-a993-4ea4-a795-867ba1fbf946/Default_computer_comic_book_1.jpg)
 
-![You](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/921bbcdd-f087-4a58-a389-d9d76b1119ef/Default_you_comic_book_speech_bubble_0.jpg)
+[You](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/921bbcdd-f087-4a58-a389-d9d76b1119ef/Default_you_comic_book_speech_bubble_0.jpg)
 
 ## Icon 
 
