@@ -10,7 +10,7 @@
 ## **[Repository](https://github.com/noxiryma/pp2_js_rpsls)**
 
 
-## Table of contents
+## [ Table of contents ](#table-of-contents)
 
 1. [ About ](#about)
 2. [ Features ](#features)  
@@ -29,9 +29,9 @@
 This website is part of my second portfolio project for the Code Institute's Full Stack Software Developer Diploma. The required main
 technologies for this project were:
 
-HTML,
-CSS, 
-and Javascript. 
+- HTML
+- CSS
+- Javascript
 
 I chose to create a site using the Project Portfolio example 1 in which the brief was to build a Rock, Paper, Scissors, Lizard, Spock
 game. The game was to involve a game of chance by the user being put up against a computer. 
@@ -277,47 +277,47 @@ The live link can be found here:
 <a name="bugs"></a>
 ## Bugs  
 
+| Bug | Fixed |
+|--|--|
+| On clicking the rock button round incremented by two. Removed onclick in html.| Yes |
+| Rounds do not total to 5. Changed total rounds value to 6 in JS | Yes |
+| Rounds continue to increment past 5. Removed game button area in endGame function to prevent user from conitnuing to play | Yes |
+| You vs Computer images did not reset to original on resetGame function | Yes |
 
 <a name="credits"></a>
 ## Credits, Content & Resources 
 
 ### [w3 schools](https://www.w3schools.com/)
 
-Used for general tips and instructions on writing HTML, CSS and Javascript
+Used for general tips and instructions on writing HTML, CSS and Javascript. 
 
 ### [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI%2B-%2BUK%2B-%2BSearch%2B-%2BBrand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMIysPPieLJhQMVl5VQBh2ZVQSEEAAYASAAEgJOn_D_BwE&nab=1&utm_referrer=https%3A%2F%2Fwww.google.com%2F) 
 
-### [Font Awesome](https://fontawesome.com/)
+### [Favicon](https://favicon.io/favicon-converter/)
 
-Icons for the footer were taken from the Font Awesome website 
+The converter was used to create the icon for the website. 
 
-### [Google Fonts](https://fonts.google.com/specimen/Quicksand?preview.text=So%20Hum)
+### [Google Fonts](https://fonts.google.com/specimen/Bungee?query=bungee)
 
-Font selected for website was taken from Google Fonts website 
-
+Font selected for website was taken from Google Fonts website. 
 
 ## Images
 
-![Rock]
-(https://app.leonardo.ai/5f38768f-0369-4894-bb0e-0c9f91caa92a)
+All images apart from the icon were generated on Leaonardo.ai website.
 
-![Paper]
-(https://app.leonardo.ai/4252eae4-2a3b-4c7c-9dea-582b816a83b3)
+![Rock](https://app.leonardo.ai/5f38768f-0369-4894-bb0e-0c9f91caa92a)
 
-![Scissors]
-(https://app.leonardo.ai/4b8b6055-9eb1-4ad4-9b75-fa170f9b9009)
+![Paper](https://app.leonardo.ai/4252eae4-2a3b-4c7c-9dea-582b816a83b3)
 
-![Lizard]
-(https://app.leonardo.ai/9f82b425-a36a-40e1-839b-fe74a4a74c47)
+![Scissors](https://app.leonardo.ai/4b8b6055-9eb1-4ad4-9b75-fa170f9b9009)
 
-![Spock] 
-(https://app.leonardo.ai/f9e61247-c030-4924-9bcd-9ada06b23cfa)
+![Lizard](https://app.leonardo.ai/9f82b425-a36a-40e1-839b-fe74a4a74c47)
 
-![Computer]
-(https://app.leonardo.ai/781d65f6-20a9-4da1-aa39-c1f2ee0e50ad)
+![Spock](https://app.leonardo.ai/f9e61247-c030-4924-9bcd-9ada06b23cfa)
 
-![You]
-(https://app.leonardo.ai/9bfbcd02-8e29-4079-a0a9-e9fa761ab4c0)
+![Computer](https://app.leonardo.ai/781d65f6-20a9-4da1-aa39-c1f2ee0e50ad)
+
+![You](https://app.leonardo.ai/9bfbcd02-8e29-4079-a0a9-e9fa761ab4c0)
 
 ## Icon 
 
@@ -330,3 +330,4 @@ Font selected for website was taken from Google Fonts website
 
 ### Alan Bushell 
 
+Appointed as my mentor for my diploma. Alan gave me valuable feedback and answered every question that I had whilst giving encouragement and introduced me to a number of resources that I will use throughout my software career.
