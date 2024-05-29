@@ -226,9 +226,9 @@ Used for validating [HTML](https://validator.w3.org/#validate_by_input) and [CSS
 | Test | Outcome |
 |--|--|
 | All navigation buttons are correct | Yes |
-| All buttons select correct user choice | Yes |
+| All game buttons select correct user choice | Yes |
 | All scores are recorded correctly (win = user + 1, lose = computer +1, draw = 0)| Yes |
-| Rounds increment correctly | Yes|
+| Rounds increment correctly and to correct total | Yes|
 | Modal opens on button click and user has to play video | Yes |
 | Modal closes when clicked on 'x' or anywhere on screen | Yes |
 | Reset game button sets all values to 0 and correct images in You vs Computer section | Yes | 
