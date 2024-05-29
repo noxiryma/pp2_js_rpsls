@@ -128,17 +128,17 @@ When the game first loads the round number is set to 0 and the user is informed 
 
 ### User vs Computer images 
 
+The You vs Computer section starts with an identifying image of each player. The You being a comic book style speech bubble and the Computer being the image of a vintage computer. The images were given the same styling of the buttons that the player selects below this section. 
 
-
-
-
-
-## Flex 
+The images display what each player has selected for each round. This is done in Javascript using playerImage.src and computerImage.src  in the runGame function. The images then reset back to the You and Computer images when the user hits the reset button.
 
 
 <a name="left"></a>
 ## Features left to implement
 
+>>
+>>
+>> 
 
 <a name="tech"></a>
 ### Technology used  
