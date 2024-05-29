@@ -130,7 +130,7 @@ function runGame(playerSelection) {
 
     //End of game at 5 rounds 
     if (currentRound > totalRounds){
-      endGame(); 
+      endGame();
     }
 
   }
@@ -160,12 +160,12 @@ function resetGame() {
 //endGame function
 
 function endGame() {
-    if (yourScore > computerScore){
+
+    if (yourScore >= 3){
       result.textContent = `Congratulations! You've won!`;
-    } else if (yourScore < computerScore){
+    } else if (yourScore <= 3){
         result.textContent = `Oh no! You lose! Try again!`;
-    } else if (yourScore === computerScore) {
+    } else if (yourScore = 2) {
       result.textContent = `It's a draw!`;
     }
 }
-
