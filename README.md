@@ -9,8 +9,8 @@
 ## **[Live Site](https://noxiryma.github.io/pp2_js_rpsls/)**
 ## **[Repository](https://github.com/noxiryma/pp2_js_rpsls)**
 
-
-## [ Table of contents ](#table-of-contents)
+<a name="table-of-contents"></a>
+## Table of contents
 
 1. [ About ](#about)
 2. [ Features ](#features)  
@@ -74,8 +74,8 @@ For the rest of the content outside of h1 to h6 and the buttons. I used a differ
 
 The font was chosen for it’s accessibility as well as it’s design. The text is clear to read with lowercase and uppercase whilst also sitting with a similar style to Bungee. 
 
-<a name="table-of-contents"></a>
-### Return to table of contents 
+[ Return to table of contents ](#table-of-contents)
+
 
 <a name="features"></a>
 ## FEATURES
