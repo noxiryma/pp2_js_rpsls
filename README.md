@@ -87,7 +87,7 @@ The first being the home page. This is the landing page for the site and display
 ### Navigation Buttons
 As the user hovers over the buttons with a mouse they change colour to highlight this is the one they are about to select. I styled the buttons in CSS and added rounded corners to them to create a pleasant and modern appearance rather than a harsh box. 
 
-![Navigation buttons](assets/images/readme_images/button_hover_feature.webp)
+![Navigation buttons](assets/images/readme_images/hover_feature.webp)
 
 I placed the navigation buttons in order from left to right as to how the user should navigate through them. First clicking on the rules button to learn the rules of the game. Then clicking on the start game button to start the game. 
 
@@ -125,6 +125,25 @@ I decided to include this function after initially creating the game page as an 
 When the game first loads the round number is set to 0 and the user is informed that best of 5 games wins. As the user plays the round numbers increase with a result text declaring if the user has won, lost or drawn with the computer. The user score and the computer score is also updated as the rounds are played. Both of these features were written in Javascript using the increment and identifying the start numbers as zero. 
 
 ![Rounds](assets/images/readme_images/round_result.webp)
+
+
+### Game Buttons 
+
+The game buttons are styled to match the You vs Computer images using CSS and are written as buttons in HTML. Event listeneres were added for each button with an onclick event being to start the game with the runGame function in Javascript. Each button also has a hover feature where the cursor changes to a pointer and the border changes from black to white. This was styled in CSS. 
+
+![Game button hover feature](assets/images/readme_images/game_hover_feature.webp)
+
+### End Game 
+
+The game runs for a number of 5 rounds. The winner is declared using a result variable in Javascript which displays to the user one of three statements based on the result of the scores of the 5 rounds. To prevent the user from being able to play the game any further than 5 rounds I used display and getElementById in Javascript in the endGame function to remove the game buttons from the page. This makes the game result and reset game button display clearly to the user. 
+
+![End Game Function](assets/images/readme_images/endGame_function.webp)
+
+### Reset Game 
+
+The reset game button sets all the values back to 0 on the screen and brings the game buttons back onto the page. It also resets the You vs Computer images back to their original, not letting the user get confused as if they have already selected an option. 
+
+![Reset game](assets/images/readme_images/start_game.webp)
 
 ### User vs Computer images 
 
