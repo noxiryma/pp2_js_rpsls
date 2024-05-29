@@ -55,7 +55,7 @@ spock.addEventListener("click", () => runGame("spock"));
 
 //Add number of rounds function so knows when to close game loop 
 let currentRound = 1;
-const totalRounds = 5; 
+const totalRounds = 6; 
 const displayedRounds = document.getElementById("total-rounds");
 
 //Player and Computer Score 
@@ -129,7 +129,7 @@ function runGame(playerSelection) {
     currentRound ++;
 
     //End of game at 5 rounds 
-    if (currentRound > totalRounds){
+    if (currentRound === totalRounds){
       endGame();
     }
 
@@ -154,7 +154,7 @@ function resetGame() {
   result.textContent = "";
   playerImage.src = `assets/images/you.webp`;
   computerImage.src = `assets/images/computer.webp`;
-
+  document.getElementById("game-buttons").style.display = "block";
 }
 
 //endGame function
@@ -168,4 +168,7 @@ function endGame() {
     } else if (yourScore = 2) {
       result.textContent = `It's a draw!`;
     }
+
+    document.getElementById("game-buttons").style.display = "none";
 }
+
