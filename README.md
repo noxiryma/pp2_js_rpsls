@@ -38,10 +38,10 @@ game. The game was to involve a game of chance by the user being put up against 
 
 The project requirements were to include: 
 
->Pattern matching functionality
->A limited number of tries before the game is over
->A score tracking system
->The ability to play against the computer
+- Pattern matching functionality
+- A limited number of tries before the game is over
+- A score tracking system
+- The ability to play against the computer
 
 
 The design of the website was one that I wanted to kept quite simple so it was easy for the user to navigate. I also wanted to pay homage to The Big Bang Theory by creating a comic book style presentation a reference to the t-shirts that Sheldon was famous for wearing. I also looked to old style arcade games such as Space Invaders and Pac Man as influence on the styles of font used. 
@@ -152,12 +152,21 @@ The You vs Computer section starts with an identifying image of each player. The
 The images display what each player has selected for each round. This is done in Javascript using playerImage.src and computerImage.src  in the runGame function. The images then reset back to the You and Computer images when the user hits the reset button.
 
 
+### Mobile & Smaller Screen styling 
+
+For the mobile styling the display of the buttons was organised in CSS using flex and margin to place the buttons in my desired layout. Giving the user enough space to not accidentally click the wrong button for their turn and to still have them readable for their images. Whilst I am happy with the design I do worry about how clearly it is to identify the selection because of how small the buttons are on the screen on 320px to 768px screens. 
+
+![Mobile game styling 320px](assets/images/readme_images/320px_game.webp)
+
+![Mobile game styling 768px](assets/images/readme_images/768px_game.webp)
+
 <a name="left"></a>
 ## Features left to implement
 
->>
->>
->> 
+- A hover over feature for the button selection with the title of the choice the user is about to make
+- A best of 3 games result so the user is encouraged to stay on the page longer
+- For the video to end when clicked out of the modal rather than for it to keep playing in the background 
+- For more than one player to be able to compete. This could be another button for the user to press which links with another person to play against on the game.  
 
 <a name="tech"></a>
 ### Technology used  
@@ -172,12 +181,12 @@ To style the website across multiple media screens
 
 ### Javascript 
 
->>Used to create functions to run the game, end the game and reset the game. 
->>Onclick events used to display content of the page. 
->>Event listeners used for user activity. 
->>Incrementation used for increasing the user, computer and number of rounds played. 
->>Random number and case used for computer selection. 
->>Text content used to display the result, user, computer and round number. 
+- Used to create functions to run the game, end the game and reset the game. 
+- Onclick events used to display content of the page. 
+- Event listeners used for user activity. 
+- Incrementation used for increasing the user, computer and number of rounds played. 
+- Random number and case used for computer selection. 
+- Text content used to display the result, user, computer and round number. 
 
 
 ### Googlefonts
@@ -188,6 +197,18 @@ For the selection and use of a font style for the website.
 
 Used to convert png files to webp files for images used. 
 
+### Leonardo.ai 
+
+An AI image generation website 
+
+### JS Hint 
+
+Used for validating Javascript. 
+
+### W3 Validator 
+
+Used for validating HTML and CSS
+
 <a name="testing"></a>
 ## Testing 
 
@@ -195,13 +216,19 @@ Used to convert png files to webp files for images used.
 
 | Test | Outcome |
 |--|--|
-| All buttons lead to the correct display of webpage | Yes |
+| All navigation buttons are correct | Yes |
+| All buttons select correct user choice | Yes |
+| All scores are recorded correctly (win = user + 1, lose = computer +1, draw = 0)| Yes |
+| Rounds increment correctly | Yes|
+| Modal opens on button click and user has to play video | Yes |
+| Modal closes when clicked on 'x' or anywhere on screen | Yes |
+| Reset game button sets all values to 0 and correct images in You vs Computer section | Yes | 
 
 **Testing for responsiveness**
 | Test | Outcome |
 |--|--|
-|Home and Start Game pages all display correctly on screens smaller than 768px | Yes |
-|Home and Start Game pages all display correctly on screens bigger than 768px | Yes |
+|Home, The Rules and Start Game pages all display correctly on screens smaller than 768px | Yes |
+|Home, The Rules and Start Game pages all display correctly on screens bigger than 768px | Yes |
 
 ## HTML Validation Testing 
 
@@ -218,6 +245,10 @@ No errors were presented upon final testing in [CSS Validator](https://jigsaw.w3
 
 ## Javascript Validation Testing 
 
+JS Validator display two unused variables but these are used in html only. 
+![JS unused variables](assets/images/readme_images/jsvalidator2.webp)
+
+Otherwise no errors were presented upon final testing.
 ![Javascript validator](assets/images/readme_images/jsvalidation.webp)
 
 
