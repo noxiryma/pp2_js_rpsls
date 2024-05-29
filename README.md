@@ -332,7 +332,7 @@ This video helped me in understanding and using different features in Javascript
 
 This video helped me in understanding and using different features in Javascript to create the game for this website.
 
-### [How to Build Rock Paper Scissors in Javascript](https://hackr.io/blog/how-to-build-rock-paper-scissors-in-javascript)
+### [How to Build Rock Paper Scissors in Javascript by Robert Johns](https://hackr.io/blog/how-to-build-rock-paper-scissors-in-javascript)
 
 This article was the main inspiration for the creation of the code for this game. 
 
