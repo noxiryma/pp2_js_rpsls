@@ -163,7 +163,7 @@ To style the website across multiple media screens
 
 ### Googlefonts
 
-For the selection and use of a font style for the website 
+For the selection and use of a font style for the website. 
 
 ### Pixelied 
 
@@ -176,7 +176,7 @@ Used to convert png files to webp files for images used.
 
 | Test | Outcome |
 |--|--|
-| All internal links lead to the correct page | Yes |
+| All buttons lead to the correct display of webpage | Yes |
 
 **Testing for responsiveness**
 | Test | Outcome |
@@ -199,6 +199,7 @@ No errors were presented upon final testing in [CSS Validator](https://jigsaw.w3
 
 ## Javascript Validation Testing 
 
+![Javascript validator](assets/images/readme_images/jsvalidation.webp)
 
 
 ## Google Lighthouse Testing 
