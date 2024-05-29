@@ -145,15 +145,21 @@ The images display what each player has selected for each round. This is done in
 
 ### HTML
 
-Used to build the structure of the web pages 
+Used to build the structure of the web page. 
 
 ### CSS 
 
-To style the website 
+To style the website across multiple media screens
 
 ### Javascript 
 
-Detail in here the different functions, onclick events, event listeners, score incrementation, round incrementation, random choice generator for computer
+>>Used to create functions to run the game, end the game and reset the game. 
+>>Onclick events used to display content of the page. 
+>>Event listeners used for user activity. 
+>>Incrementation used for increasing the user, computer and number of rounds played. 
+>>Random number and case used for computer selection. 
+>>Text content used to display the result, user, computer and round number. 
+
 
 ### Googlefonts
 
