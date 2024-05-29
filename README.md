@@ -1,6 +1,6 @@
 # Project Portfolio 2 - Rock Paper Scissors Lizard Spock
 ## An interactive game based off the variation from the Big Bang Theory 
-### PP2 - Amy Rixon - 28/05/2024
+### PP2 - Amy Rixon - 30/05/2024
 
 ![I am responsive screenshot](assets/images/readme_images/air_rpsls.webp)
 
@@ -26,7 +26,7 @@
 <a name="about"></a>
 ## About 
 
-This website is part of my second portfolio project for the Code Institute's Full Stack Software Developer Diploma. The required main
+This website is part of my second portfolio project for the Code Institute's Full Stack Software Development Diploma. The required main
 technologies for this project were:
 
 - HTML
@@ -44,7 +44,7 @@ The project requirements were to include:
 - The ability to play against the computer
 
 
-The design of the website was one that I wanted to kept quite simple so it was easy for the user to navigate. I also wanted to pay homage to The Big Bang Theory by creating a comic book style presentation a reference to the t-shirts that Sheldon was famous for wearing. I also looked to old style arcade games such as Space Invaders and Pac Man as influence on the styles of font used. 
+The design of the website was one that I wanted to kept quite simple so it was easy for the user to navigate. I also wanted to pay homage to The Big Bang Theory by creating a comic book style visual theme, a reference to the t-shirts that Sheldon was famous for wearing. I also looked to old style arcade games such as Space Invaders and Pac Man as influence on the styles of font used. 
 
 
 ### Colour Scheme 
@@ -53,7 +53,7 @@ The design of the website was one that I wanted to kept quite simple so it was e
 
 The colour scheme I decided to focus on was a minimalist approach to the colours found in a majority of the images selected for this 
 website. I focussed on the blue tone of Spock's smock to build the base of colour choice for this project rather than using clashing
-colours. 
+colours. As this blue is an iconic colour that can't be changed but all the other colours can be chosen to compliment it. 
 
 
 ### Font 
@@ -64,7 +64,7 @@ The font family used for this site is
 
 ![Bungee screenshot](assets/images/readme_images/bungee_font.webp)
 
-with a weight of 400 the font is easy to read and prints the text on the page in all capital letters. Much like old arcade games. 
+with a weight of 400 the font is easy to read and prints the text on the page in all capital letters. Much like the old arcade games I was referencing for style inspiration but with this font it creates a smoother and modern appearance for the site.  
 
 For the rest of the content outside of h1 to h6 and the buttons. I used a different font called 
 
@@ -72,7 +72,7 @@ For the rest of the content outside of h1 to h6 and the buttons. I used a differ
 
 ![Teko screenshot](assets/images/readme_images/teko_font.webp)
 
-The font was chosen for it’s accessibility as well as it’s design. The text is clear to read with lowercase and uppercase whilst also sitting with a similar style to Bungee. 
+The font was chosen for it’s accessibility as well as it’s design. The text is clear to read with lowercase and uppercase whilst also sitting with a similar style to Bungee. This meant the rules of the game and the user and computer score are easier to read in a lighter font compared to Bungee. 
 
 [ Return to table of contents ](#table-of-contents)
 
@@ -81,7 +81,7 @@ The font was chosen for it’s accessibility as well as it’s design. The text 
 ## FEATURES
 
 ### Home Page
-The website has 4 different pages presented to the user. 
+The website has 4 different sections of the website presented to the user. Only the first 3 are visible as options upon landing on the home page. 
 
 The first being the home page. This is the landing page for the site and displays the title of the game and the site at the top in clear bold writing. There are then 3 buttons displayed for the user to navigate. Home, The Rules and Start Game. 
 
@@ -94,7 +94,7 @@ As the user hovers over the buttons with a mouse they change colour to highlight
 
 I placed the navigation buttons in order from left to right as to how the user should navigate through them. First clicking on the rules button to learn the rules of the game. Then clicking on the start game button to start the game. 
 
-On smaller screens from 320px up to 768px the navigation buttons flex direction were changed from row to column. 
+On smaller screens with a min-width from 320px up to 1024px the navigation buttons flex direction were changed from row to column. 
 
 ![Navigation buttons mobile 320px](assets/images/readme_images/320px_home.webp)
 
@@ -111,17 +111,17 @@ Upon clicking on the rules button a modal appears on the webpage with an embedde
 
 ![Modal](assets/images/readme_images/modal.webp)
 
-On smaller screens the video is adapted in size to fit the width and height of the modal using styling in CSS. 
+On smaller screens the video is adapted in size to fit the width and height of the modal using styling in CSS. The modal also takes up most of the screen so it is easier for the user to read. 
 
 ![320px Modal](assets/images/readme_images/320px_modal.webp)
 
 ### Start Game 
 
-The start game button then loads the game underneath the main box on the home page of the You vs Computer images. This was created using an onclick function in Javascript getting the elements of the home and game area by their ID and using the display function. The user can navigate away from the game page by clicking the home button again.
+The start game button then loads the game underneath the main box on the home page of the You vs Computer images. This was created using an onclick function in Javascript getting the elements of the home and game area by their ID and using style display. The user can navigate away from the game page by clicking the home button again.
 
 ![Start game](assets/images/readme_images/start_game.webp)
 
-I decided to include this function after initially creating the game page as an external game.html file and looking at other example game websites I realised it was cleaner and would allow me to use more Javascript features to have everything on one page. I also wanted the home page to look clean and not messy with the game underneath. 
+I decided to include this function after initially creating the game page as an external game.html file and looking at other example game websites I realised it was cleaner and would allow me to use more Javascript features to have everything on one page. I also wanted the home page to look clean and encourage the user to click the rules button before getting distracted and playing the game straight away. 
 
 ### Rounds 
 
@@ -138,7 +138,7 @@ The game buttons are styled to match the You vs Computer images using CSS and ar
 
 ### End Game 
 
-The game runs for a number of 5 rounds. The winner is declared using a result variable in Javascript which displays to the user one of three statements based on the result of the scores of the 5 rounds. To prevent the user from being able to play the game any further than 5 rounds I used display and getElementById in Javascript in the endGame function to remove the game buttons from the page. This makes the game result and reset game button display clearly to the user. 
+The game runs for a number of 5 rounds. The winner is declared using a result variable in Javascript which displays to the user one of three statements based on the result of the scores of the 5 rounds. To prevent the user from being able to play the game any further than 5 rounds, I used display and getElementById in Javascript in the endGame function. This removes the game buttons from the page. This also makes the game result and reset game button display clearly to the user encouraging them to reset the game and play again. 
 
 ![End Game Function](assets/images/readme_images/endGame_function.webp)
 
@@ -263,11 +263,11 @@ Otherwise no errors were presented upon final testing.
 
 ## Google Lighthouse Testing 
 
-The results of Google Lighthouse Test on Mobile
+### The results of Google Lighthouse Test on Mobile
 
 ![Google LightHouse Mobile](assets/images/readme_images/lighthousetesting_mobile.webp)
 
-The results of Google Lighthouse Test on Desktop 
+### The results of Google Lighthouse Test on Desktop 
 
 ![Google Lighthouse Desktop](assets/images/readme_images/lighthousetesting_desktop.webp)
 
@@ -307,6 +307,8 @@ Used for general tips and instructions on writing HTML, CSS and Javascript.
 
 ### [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI%2B-%2BUK%2B-%2BSearch%2B-%2BBrand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMIysPPieLJhQMVl5VQBh2ZVQSEEAAYASAAEgJOn_D_BwE&nab=1&utm_referrer=https%3A%2F%2Fwww.google.com%2F) 
 
+Project created through education for Project Portfolio 2 of the Full Stack Software Developer Diploma
+
 ### [Favicon](https://favicon.io/favicon-converter/)
 
 The converter was used to create the icon for the website. 
@@ -319,19 +321,19 @@ Font selected for website was taken from Google Fonts website.
 
 All images apart from the icon were generated on Leaonardo.ai website.
 
-![Rock](https://app.leonardo.ai/5f38768f-0369-4894-bb0e-0c9f91caa92a)
+![Rock](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/a9f90f90-fd8a-4555-8564-479388dea542/Default_rock_illustration_0.jpg)
 
-![Paper](https://app.leonardo.ai/4252eae4-2a3b-4c7c-9dea-582b816a83b3)
+![Paper](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/3dded6c8-8910-4f6c-936a-a66f8b2e1b87/Default_origami_bird_illustration_2.jpg)
 
-![Scissors](https://app.leonardo.ai/4b8b6055-9eb1-4ad4-9b75-fa170f9b9009)
+![Scissors](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/29452663-eb0b-4b30-9223-f51729b1fdb5/Default_scissors_illustration_3.jpg)
 
-![Lizard](https://app.leonardo.ai/9f82b425-a36a-40e1-839b-fe74a4a74c47)
+![Lizard](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/c71c9ecb-96c4-403d-9ec4-3d1770b44d8e/Default_lizard_illustration_1.jpg)
 
-![Spock](https://app.leonardo.ai/f9e61247-c030-4924-9bcd-9ada06b23cfa)
+![Spock](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/bb25e000-d5ff-451e-951e-93e298a650db/Default_spock_illustration_0.jpg)
 
-![Computer](https://app.leonardo.ai/781d65f6-20a9-4da1-aa39-c1f2ee0e50ad)
+![Computer](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/d07e31c2-a993-4ea4-a795-867ba1fbf946/Default_computer_comic_book_1.jpg)
 
-![You](https://app.leonardo.ai/9bfbcd02-8e29-4079-a0a9-e9fa761ab4c0)
+![You](https://cdn.leonardo.ai/users/2eb0786a-5885-457c-b99c-c3bbc5a3b1a1/generations/921bbcdd-f087-4a58-a389-d9d76b1119ef/Default_you_comic_book_speech_bubble_0.jpg)
 
 ## Icon 
 
