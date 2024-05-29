@@ -295,6 +295,9 @@ The live link can be found here: [Live Site](https://noxiryma.github.io/pp2_js_r
 | Rounds do not total to 5. Changed total rounds value to 6 in JS | Yes |
 | Rounds continue to increment past 5. Removed game button area in endGame function to prevent user from conitnuing to play | Yes |
 | You vs Computer images did not reset to original on resetGame function | Yes |
+| Upon HTML validation, error for frame border on iframe being obsolete | Yes |
+| Upon CSS validation, error for font-optical-sizing doesn't exist | Yes |
+| When inspecting using debugger webmanifest was not being retrieved but not needed | Yes |
 
 [ Return to table of contents ](#table-of-contents)
 
