@@ -74,8 +74,8 @@ For the rest of the content outside of h1 to h6 and the buttons. I used a differ
 
 The font was chosen for it’s accessibility as well as it’s design. The text is clear to read with lowercase and uppercase whilst also sitting with a similar style to Bungee. 
 
-<a name="table-of-contents></a>
-Return to table of contents 
+<a name="table-of-contents"></a>
+### Return to table of contents 
 
 <a name="features"></a>
 ## FEATURES
