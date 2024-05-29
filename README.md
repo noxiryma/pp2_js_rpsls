@@ -168,7 +168,7 @@ For the mobile styling the display of the buttons was organised in CSS using fle
 <a name="left"></a>
 ## Features left to implement
 
-- A hover over feature for the button selection with the title of the choice the user is about to make
+- A hover over feature for the button selection with the title of the choice the user is about to make. This would be the word description of the choice eg. "rock" 
 - A best of 3 games result so the user is encouraged to stay on the page longer
 - For the video to end when clicked out of the modal rather than for it to keep playing in the background 
 - For more than one player to be able to compete.
@@ -308,6 +308,10 @@ The live link can be found here: [Live Site](https://noxiryma.github.io/pp2_js_r
 
 Used for general tips and instructions on writing HTML, CSS and Javascript. 
 
+### [W3 Schools Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
+
+The code in the above link was used to create the modal for the website. 
+
 ### [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI%2B-%2BUK%2B-%2BSearch%2B-%2BBrand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMIysPPieLJhQMVl5VQBh2ZVQSEEAAYASAAEgJOn_D_BwE&nab=1&utm_referrer=https%3A%2F%2Fwww.google.com%2F) 
 
 Project created through education for Project Portfolio 2 of the Full Stack Software Developer Diploma
@@ -319,6 +323,19 @@ The converter was used to create the icon for the website.
 ### [Google Fonts](https://fonts.google.com/specimen/Bungee?query=bungee)
 
 Font selected for website was taken from Google Fonts website. 
+
+### [Build Javascript Rock Paper Scissors in 18 minutes by Bro Code](https://youtu.be/3uKdQx-SZ5A?si=7H8yBzYwciv1WEWB)
+
+This video helped me in understanding and using different features in Javascript to create the game for this website. 
+
+### [3 Ways to Code Rock Paper Scissors in Javascript by Code with Ania Kubow](https://youtu.be/RwFeg0cEZvQ?si=7CusF8M80FisVWvv)
+
+This video helped me in understanding and using different features in Javascript to create the game for this website.
+
+### [How to Build Rock Paper Scissors in Javascript](https://hackr.io/blog/how-to-build-rock-paper-scissors-in-javascript)
+
+This article was the main inspiration for the creation of the code for this game. 
+
 
 ## Images
 
