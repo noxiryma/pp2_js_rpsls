@@ -171,7 +171,7 @@ For the mobile styling the display of the buttons was organised in CSS using fle
 - A hover over feature for the button selection with the title of the choice the user is about to make
 - A best of 3 games result so the user is encouraged to stay on the page longer
 - For the video to end when clicked out of the modal rather than for it to keep playing in the background 
-- For more than one player to be able to compete. This could be another button for the user to press which links with another person to play against on the game.  
+- For more than one player to be able to compete.
 
 [ Return to table of contents ](#table-of-contents)
 
@@ -196,25 +196,25 @@ To style the website across multiple media screens
 - Text content used to display the result, user, computer and round number. 
 
 
-### Googlefonts
+### [Googlefonts](https://fonts.google.com/)
 
 For the selection and use of a font style for the website. 
 
-### Pixelied 
+### [Pixelied](https://pixelied.com/convert) 
 
 Used to convert png files to webp files for images used. 
 
-### Leonardo.ai 
+### [Leonardo.ai](https://leonardo.ai/) 
 
 An AI image generation website 
 
-### JS Hint 
+### [JS Hint](https://jshint.com/) 
 
 Used for validating Javascript. 
 
 ### W3 Validator 
 
-Used for validating HTML and CSS
+Used for validating [HTML](https://validator.w3.org/#validate_by_input) and [CSS](https://jigsaw.w3.org/css-validator/)
 
 [ Return to table of contents ](#table-of-contents)
 
@@ -340,9 +340,9 @@ All images apart from the icon were generated on Leaonardo.ai website.
 
 ## Icon 
 
-![Favicon](https://favicon.io/favicon-converter/) converter was used to transform the below icon into a usable icon for the website. 
+[Favicon](https://favicon.io/favicon-converter/) converter was used to transform the below icon into a usable icon for the website. 
 
-![Hand Icon](https://www.flaticon.com/free-icon/scissors_9534501?term=rock+paper+scissors&page=1&position=2&origin=search&related_id=9534501)
+[Hand Icon](https://www.flaticon.com/free-icon/scissors_9534501?term=rock+paper+scissors&page=1&position=2&origin=search&related_id=9534501)
 
 
 [ Return to table of contents ](#table-of-contents)
