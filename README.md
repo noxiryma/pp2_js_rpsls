@@ -163,6 +163,8 @@ For the mobile styling the display of the buttons was organised in CSS using fle
 
 ![Mobile game styling 768px](assets/images/readme_images/768px_game.webp)
 
+[ Return to table of contents ](#table-of-contents)
+
 <a name="left"></a>
 ## Features left to implement
 
@@ -170,6 +172,8 @@ For the mobile styling the display of the buttons was organised in CSS using fle
 - A best of 3 games result so the user is encouraged to stay on the page longer
 - For the video to end when clicked out of the modal rather than for it to keep playing in the background 
 - For more than one player to be able to compete. This could be another button for the user to press which links with another person to play against on the game.  
+
+[ Return to table of contents ](#table-of-contents)
 
 <a name="tech"></a>
 ### Technology used  
@@ -211,6 +215,8 @@ Used for validating Javascript.
 ### W3 Validator 
 
 Used for validating HTML and CSS
+
+[ Return to table of contents ](#table-of-contents)
 
 <a name="testing"></a>
 ## Testing 
@@ -265,6 +271,7 @@ The results of Google Lighthouse Test on Desktop
 
 ![Google Lighthouse Desktop](assets/images/readme_images/lighthousetesting_desktop.webp)
 
+[ Return to table of contents ](#table-of-contents)
 
 <a name="deployment"></a>
 ## Deployment 
@@ -275,7 +282,9 @@ I deployed the project to GitHub pages using the following steps:
 + From the source section drop-down menu, select the Master Branch
 + Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here: 
+The live link can be found here: [Live Site](https://noxiryma.github.io/pp2_js_rpsls/)
+
+[ Return to table of contents ](#table-of-contents)
 
 <a name="bugs"></a>
 ## Bugs  
@@ -286,6 +295,8 @@ The live link can be found here:
 | Rounds do not total to 5. Changed total rounds value to 6 in JS | Yes |
 | Rounds continue to increment past 5. Removed game button area in endGame function to prevent user from conitnuing to play | Yes |
 | You vs Computer images did not reset to original on resetGame function | Yes |
+
+[ Return to table of contents ](#table-of-contents)
 
 <a name="credits"></a>
 ## Credits, Content & Resources 
@@ -327,6 +338,9 @@ All images apart from the icon were generated on Leaonardo.ai website.
 ![Favicon](https://favicon.io/favicon-converter/) converter was used to transform the below icon into a usable icon for the website. 
 
 ![Hand Icon](https://www.flaticon.com/free-icon/scissors_9534501?term=rock+paper+scissors&page=1&position=2&origin=search&related_id=9534501)
+
+
+[ Return to table of contents ](#table-of-contents)
 
 <a name="acknowledgements"></a>
 ## Acknowledgements 
