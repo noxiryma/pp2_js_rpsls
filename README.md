@@ -204,6 +204,13 @@ No errors were presented upon final testing in [CSS Validator](https://jigsaw.w3
 
 ## Google Lighthouse Testing 
 
+The results of Google Lighthouse Test on Mobile
+
+![Google LightHouse Mobile](assets/images/readme_images/lighthousetesting_mobile.webp)
+
+The results of Google Lighthouse Test on Desktop 
+
+![Google Lighthouse Desktop](assets/images/readme_images/lighthousetesting_desktop.webp)
 
 
 <a name="deployment"></a>
