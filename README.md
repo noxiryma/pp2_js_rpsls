@@ -297,7 +297,7 @@ The live link can be found here: [Live Site](https://noxiryma.github.io/pp2_js_r
 | You vs Computer images did not reset to original on resetGame function | Yes |
 | Upon HTML validation, error for frame border on iframe being obsolete | Yes |
 | Upon CSS validation, error for font-optical-sizing doesn't exist | Yes |
-| When inspecting using debugger webmanifest was not being retrieved but not needed | Yes |
+| When inspecting using debugger webmanifest was not being retrieved but not needed so removed from index.html | Yes |
 
 [ Return to table of contents ](#table-of-contents)
 
