@@ -77,6 +77,7 @@ p, #results {
     background-color: #024059;
     color: rgba(255, 255, 255, 1.0);
     border: 2px solid rgba(255, 255, 255, 1.0);
+    cursor: pointer;
 }
 
 .navigation-buttons {
@@ -184,6 +185,11 @@ p, #results {
     height: 150px;
     margin: 0 30px;
     border: solid 3px rgba(0, 0, 0, 1.0);
+}
+
+.button-round:hover {
+    cursor: pointer;
+    border: solid 3px rgba(255, 255, 255, 1.0);
 }
 
 #rock {
